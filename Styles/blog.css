@@ -1,0 +1,62 @@
+body {
+    background-image: none;
+}
+
+.fondo {
+    background-image: url(../img/bio_Clara_Tabares.jpg);
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+.namePage {
+    font-size: 80px;
+    color: white;
+    text-shadow: 3px 3px 10px rgb(0, 0, 0, 0.5);
+
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+}
+
+/* Artículos */
+
+
+.encabezadoGridBlog {
+    text-align: center;
+    padding: 5% 20%;
+}
+
+.encabezadoGridBlog h2{
+    padding: 20px;
+}
+
+.gridBlog {
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    column-gap: 60px;
+    padding: 0 5% 5%;
+}
+
+.gridArticulo{
+    box-shadow: 0 6px 16px 1px rgb(47, 64, 50, 0.4);
+    border-radius: 10px;
+}
+
+.gridArticulo img{
+    height: 100px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.gridArticulo h3{
+    padding: 25px 25px 10px;
+}
+
+.gridArticulo p{
+    padding: 10px 25px 25px;
+}
+

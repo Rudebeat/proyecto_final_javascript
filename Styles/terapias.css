@@ -1,0 +1,68 @@
+body {
+    background-image: none;
+}
+
+.fondo {
+    background-image: url(../img/bio_Clara_Tabares.jpg);
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+.namePage {
+    font-size: 80px;
+    color: white;
+    text-shadow: 3px 3px 10px rgb(0, 0, 0, 0.5);
+
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+}
+
+/* Artículos */
+
+
+.encabezadoGridTerapias {
+    text-align: center;
+    padding: 5% 20%;
+}
+
+.encabezadoGridTerapias h2 {
+    padding: 20px;
+}
+
+.gridTerapias {
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    row-gap: 60px;
+    width: 80%;
+    margin: 0 auto 10%;
+}
+
+.itemTerapias {
+    box-shadow: 0 6px 16px 1px rgb(47, 64, 50, 0.4);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.itemTerapias img {
+    height: 100%;
+    width: 30%;
+    object-fit: cover;
+    border-radius: 10px 0 0 10px;
+}
+
+.contenidoCardTerapias {
+    padding: 5%;
+}
+
+.contenidoCardTerapias h3 {
+    padding-bottom: 10px;
+}
+
+.gridArticulo p {
+    padding: 10px 25px 25px;
+}
