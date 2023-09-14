@@ -104,8 +104,7 @@ header {
 
 header div {
     height: 100%;
-    width: 45px;
-    overflow: hidden;
+    width: auto;
     /* background-color: #2F4032; */
 }
 
@@ -204,7 +203,7 @@ footer h4 {
 
 /* Media queries */
 
-@media only screen and (max-width:530px) {
+@media only screen and (max-width:584px) {
     /* Header */
 
     .contenedorNav {
@@ -216,21 +215,19 @@ footer h4 {
     }
 
     header div {
-        width: 40px;
-        height: 40px;
+        height: 5vh;
+        width: auto;
+    }
+
+    header div img {
+        height: 100%;
+        width: auto;
     }
 
     nav {
         display: none;
     }
 
-}
-
-@media only screen and (min-width:531px) {
-    header div {
-        width: 40px;
-        height: 100%;
-    }
 }
 
 @media only screen and (min-width:1024px) {
