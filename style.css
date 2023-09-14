@@ -41,21 +41,34 @@ body {
 }
 
 
-.botones {
+/* .botones {
     width: 250px;
     height: auto;
     border-radius: 10px;
     padding: 15px;
     display: block;
-    background-color: #6DAB8E;
+    
     color: white;
     text-decoration: none;
     margin-top: 10%;
     text-align: center;
+} */
+
+button {
+    background-color: #6DAB8E !important;
+    text-decoration: none !important;
 }
 
-.botones:hover {
-    background-color: #57846C;
+button:hover {
+    background-color: #57846C !important;
+}
+
+button a {
+    color: white !important;
+}
+
+button a:hover {
+    color: white !important;
 }
 
 a,
@@ -72,14 +85,14 @@ header {
     position: fixed;
     top: 20px;
     z-index: 2;
-    
+
 }
 
-.contenedorNav{
+.contenedorNav {
     height: 10vh;
     width: 95%;
     margin: auto;
-    
+
     padding: 10px;
     display: flex;
     justify-content: space-between;
