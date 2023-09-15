@@ -1,5 +1,5 @@
 # 💫 About Me:
-👨‍💼 Espacialista en Gerencia de la Experiencia Digital<br>👨‍🎨 Diseñador UX/UI Senior<br>👨‍💻 Desarrollador web Junior<br>
+👨‍💼 Especialista en Gerencia de la Experiencia Digital<br>👨‍🎨 Diseñador UX/UI Senior<br>👨‍💻 Desarrollador web Junior<br>
 
 
 ## 🌐 Socials:
