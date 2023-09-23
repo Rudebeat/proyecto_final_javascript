@@ -1,12 +1,9 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,500;1,600;1,700&display=swap');
 
 /* font-family: 'Cormorant Infant', serif; */
-
-
 /* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
 /* font-family: 'Open Sans', sans-serif; */
-
 /* 
 @font-face {
     font-family: cormorant;
@@ -26,220 +23,188 @@
     src: url(fonts/Opensans/OpenSans-SemiBold.ttf);
     src: url(fonts/Opensans/OpenSans-Regular.ttf);
 } */
-
 /* Generales */
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-body {
-    background-image: url(img/background.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-
 /* .botones {
     width: 250px;
     height: auto;
     border-radius: 10px;
     padding: 15px;
     display: block;
-    
+
     color: white;
     text-decoration: none;
     margin-top: 10%;
     text-align: center;
 } */
+/* Header */
+/* Footer */
+/* Media queries */
+/* Header */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(img/background.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 
 button {
-    background-color: #6DAB8E !important;
-    text-decoration: none !important;
+  background-color: #6DAB8E !important;
+  text-decoration: none !important;
 }
-
 button:hover {
-    background-color: #57846C !important;
+  background-color: #57846C !important;
 }
-
 button a {
-    color: white !important;
+  color: white !important;
 }
-
 button a:hover {
-    color: white !important;
+  color: white !important;
 }
 
-a,
+a {
+  text-decoration: none;
+}
 a:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
-
-
-/* Header */
 
 header {
-    /* background-color:red; */
-    width: 100%;
-    position: fixed;
-    top: 20px;
-    z-index: 2;
-
+  width: 100%;
+  position: fixed;
+  top: 20px;
+  z-index: 2;
+}
+header div {
+  height: 100%;
+  width: auto;
+}
+header div img {
+  height: 100%;
 }
 
 .contenedorNav {
-    height: 10vh;
-    width: 95%;
-    margin: auto;
-
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgb(255, 255, 255, 1);
-    box-shadow: 0 10px 16px -10px rgba(47, 64, 50, 0.3);
-    border-radius: 10px;
+  height: 10vh;
+  width: 95%;
+  margin: auto;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 10px 16px -10px rgba(47, 64, 50, 0.3);
+  border-radius: 10px;
 }
-
-header div {
-    height: 100%;
-    width: auto;
-    /* background-color: #2F4032; */
-}
-
-header div img {
-    height: 100%;
-}
-
 
 nav {
-    height: auto;
-    font-size: 16px;
-    /* background-color: yellow; */
+  height: auto;
+  font-size: 16px;
 }
-
 nav ul {
-    display: flex;
-    align-items: center;
-    margin: 0;
+  display: flex;
+  align-items: center;
+  margin: 0;
 }
-
 nav li {
-    list-style: none;
-    margin-right: 20px;
+  list-style: none;
+  margin-right: 20px;
 }
-
 nav a {
-    color: #2F4032;
+  color: #2F4032;
 }
-
 nav a:hover {
-    color: #57846C;
+  color: #57846C;
 }
-
-/* Footer */
-
 
 footer {
-    padding: 5%;
-    background-color: #2F4032;
-    height: auto;
-    display: flex;
-    justify-content: space-between;
+  padding: 5%;
+  background-color: #2F4032;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+footer h4 {
+  padding: 15px 0;
+  color: white;
 }
 
 #redesSociales {
-    /* background: slateblue; */
-    width: 10%;
-    height: auto;
-    align-self: center;
+  width: 10%;
+  height: auto;
+  align-self: center;
 }
-
 #redesSociales img {
-    width: 20%;
+  width: 20%;
 }
 
 .newsletter {
-    /* background: slateblue; */
-    width: 30%;
-    display: flex;
-    align-items: center;
+  width: 30%;
+  display: flex;
+  align-items: center;
 }
 
 form {
-    width: 100%;
-}
-
-footer h4 {
-    padding: 15px 0;
-    color: white;
+  width: 100%;
 }
 
 .email {
-    background-color: white;
-    color: #2F4032;
-    border: none;
-    height: auto;
-    width: 70%;
-    padding: 5px 0 5px 30px;
-    border-radius: 5px;
-    font-size: 16px;
-
+  background-color: white;
+  color: #2F4032;
+  border: none;
+  height: auto;
+  width: 70%;
+  padding: 5px 0 5px 30px;
+  border-radius: 5px;
+  font-size: 16px;
 }
-
+.email::-moz-placeholder {
+  color: #2F4032;
+}
 .email::placeholder {
-    color: #2F4032;
+  color: #2F4032;
 }
 
 .botonNewsletter {
-    background-color: transparent;
-    border: none;
-    margin-left: 20px;
-    color: #6DAB8E;
-    text-decoration: underline;
+  background-color: transparent;
+  border: none;
+  margin-left: 20px;
+  color: #6DAB8E;
+  text-decoration: underline;
 }
 
-
-/* Media queries */
-
-@media only screen and (max-width:584px) {
-    /* Header */
-
-    .contenedorNav {
-        background-color: rgb(255, 255, 255);
-        height: auto;
-        width: auto;
-        position: fixed;
-        right: 20px;
-    }
-
-    header div {
-        height: 5vh;
-        width: auto;
-    }
-
-    header div img {
-        height: 100%;
-        width: auto;
-    }
-
-    nav {
-        display: none;
-    }
-
+@media only screen and (max-width: 584px) {
+  .contenedorNav {
+    background-color: rgb(255, 255, 255);
+    height: auto;
+    width: auto;
+    position: fixed;
+    right: 20px;
+  }
+  header div {
+    height: 5vh;
+    width: auto;
+  }
+  header div img {
+    height: 100%;
+    width: auto;
+  }
+  nav {
+    display: none;
+  }
 }
-
-@media only screen and (min-width:1024px) {
-    header div {
-        width: 60px;
-        height: 100%;
-    }
+@media only screen and (min-width: 1024px) {
+  header div {
+    width: 60px;
+    height: 100%;
+  }
 }
-
-@media only screen and (min-width:1440px) {
-    header div {
-        width: 70px;
-        height: 100%;
-    }
-}
+@media only screen and (min-width: 1440px) {
+  header div {
+    width: 70px;
+    height: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */

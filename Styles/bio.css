@@ -1,84 +1,69 @@
 /* Main */
-
+/* Media queries */
 body {
-    background-image: none;
+  background-image: none;
 }
 
 .fondo {
-    background-image: url(../img/bio_Clara_Tabares.jpg);
-    background-size: cover;
-    height: 100vh;
-    position: relative;
+  background-image: url(../img/bio_Clara_Tabares.jpg);
+  background-size: cover;
+  height: 100vh;
+  position: relative;
 }
 
 #bio {
-    /* background-color: yellowgreen; */
-    height: auto;
-    padding: 5%;
-    text-align: left;
-    position: relative;
+  height: auto;
+  padding: 5%;
+  text-align: left;
+  position: relative;
 }
-
 #bio p {
-    width: 60%;
+  width: 60%;
 }
 
 .boxFloat {
-    position: absolute;
-    right: 12%;
-    top: -120%;
+  position: absolute;
+  right: 12%;
+  top: -120%;
 }
-
 .boxFloat img {
-    height: 400px;
-    width: 300px;
-
+  height: 400px;
+  width: 300px;
 }
 
 .namePage {
-    font-size: 80px;
-    color: white;
-    text-shadow: 3px 3px 10px rgb(0, 0, 0, 0.5);
-
-    position: absolute;
-    bottom: 10%;
-    left: 5%;
+  font-size: 80px;
+  color: white;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
 }
 
-
-
-/* Media queries */
-
-@media only screen and (max-width:970px) {
-    .boxFloat {
-        display: none;
-    }
-
-    .fondo {
-        height: 80vh;
-    }
-
-    #bio p {
-        width: auto;
-    }
+@media only screen and (max-width: 970px) {
+  .boxFloat {
+    display: none;
+  }
+  .fondo {
+    height: 80vh;
+  }
+  #bio p {
+    width: auto;
+  }
 }
-
-@media only screen and (min-width:971px) {
-    #bio p {
-        width: 55%
-    }
-
-    .boxFloat {
-        right: 8%;
-    }
+@media only screen and (min-width: 971px) {
+  #bio p {
+    width: 55%;
+  }
+  .boxFloat {
+    right: 8%;
+  }
 }
-
-@media only screen and (min-width:1024px) {
-    #bio p {
-        width: 60%
-    }
-
-    .boxFloat {
-        right: 10%;
-    }
-}
+@media only screen and (min-width: 1024px) {
+  #bio p {
+    width: 60%;
+  }
+  .boxFloat {
+    right: 10%;
+  }
+}/*# sourceMappingURL=bio.css.map */

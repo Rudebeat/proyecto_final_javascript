@@ -1,0 +1,243 @@
+﻿$color_1: white;
+$color_2: #2F4032;
+$color_3: #57846C;
+$color_4: #6DAB8E;
+$background-color_1: #6DAB8E;
+$background-color_2: #57846C;
+$background-color_3: rgb(255, 255, 255, 1);
+$background-color_4: #2F4032;
+$background-color_5: white;
+$background-color_6: transparent;
+$background-color_7: rgb(255, 255, 255);
+
+/* @import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,500;1,600;1,700&display=swap');
+
+/* font-family: 'Cormorant Infant', serif; */
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+/* font-family: 'Open Sans', sans-serif; */
+/* 
+@font-face {
+    font-family: cormorant;
+    src: url(fonts/cormorant/CormorantInfant-Bold.ttf);
+    src: url(fonts/cormorant/CormorantInfant-Light.ttf);
+    src: url(fonts/cormorant/CormorantInfant-Medium.ttf);
+    src: url(fonts/cormorant/CormorantInfant-Regular.ttf);
+    src: url(fonts/cormorant/CormorantInfant-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: opensans;
+    src: url(fonts/Opensans/OpenSans-Bold.ttf);
+    src: url(fonts/Opensans/OpenSans-ExtraBold.ttf);
+    src: url(fonts/Opensans/OpenSans-Light.ttf);
+    src: url(fonts/Opensans/OpenSans-Medium.ttf);
+    src: url(fonts/Opensans/OpenSans-SemiBold.ttf);
+    src: url(fonts/Opensans/OpenSans-Regular.ttf);
+} */
+/* Generales */
+/* .botones {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    padding: 15px;
+    display: block;
+    
+    color: white;
+    text-decoration: none;
+    margin-top: 10%;
+    text-align: center;
+} */
+/* Header */
+/* Footer */
+/* Media queries */
+/* Header */
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-image: url(img/background.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+button {
+	background-color: $background-color_1 !important;
+	text-decoration: none !important;
+
+	&:hover {
+		background-color: $background-color_2 !important;
+	}
+
+	a {
+		color: $color_1 !important;
+
+		&:hover {
+			color: $color_1 !important;
+		}
+	}
+}
+
+a {
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+header {
+	width: 100%;
+	position: fixed;
+	top: 20px;
+	z-index: 2;
+
+	div {
+		height: 100%;
+		width: auto;
+
+		img {
+			height: 100%;
+		}
+	}
+}
+
+.contenedorNav {
+	height: 10vh;
+	width: 95%;
+	margin: auto;
+	padding: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: $background-color_3;
+	box-shadow: 0 10px 16px -10px rgba(47, 64, 50, 0.3);
+	border-radius: 10px;
+}
+
+nav {
+	height: auto;
+	font-size: 16px;
+
+	ul {
+		display: flex;
+		align-items: center;
+		margin: 0;
+	}
+
+	li {
+		list-style: none;
+		margin-right: 20px;
+	}
+
+	a {
+		color: $color_2;
+
+		&:hover {
+			color: $color_3;
+		}
+	}
+}
+
+footer {
+	padding: 5%;
+	background-color: $background-color_4;
+	height: auto;
+	display: flex;
+	justify-content: space-between;
+
+	h4 {
+		padding: 15px 0;
+		color: $color_1;
+	}
+}
+
+#redesSociales {
+	width: 10%;
+	height: auto;
+	align-self: center;
+
+	img {
+		width: 20%;
+	}
+}
+
+.newsletter {
+	width: 30%;
+	display: flex;
+	align-items: center;
+}
+
+form {
+	width: 100%;
+}
+
+.email {
+	background-color: $background-color_5;
+	color: $color_2;
+	border: none;
+	height: auto;
+	width: 70%;
+	padding: 5px 0 5px 30px;
+	border-radius: 5px;
+	font-size: 16px;
+
+	&::placeholder {
+		color: $color_2;
+	}
+}
+
+.botonNewsletter {
+	background-color: $background-color_6;
+	border: none;
+	margin-left: 20px;
+	color: $color_4;
+	text-decoration: underline;
+}
+
+@media only screen and (max-width:584px) {
+	.contenedorNav {
+		background-color: $background-color_7;
+		height: auto;
+		width: auto;
+		position: fixed;
+		right: 20px;
+	}
+
+	header {
+		div {
+			height: 5vh;
+			width: auto;
+
+			img {
+				height: 100%;
+				width: auto;
+			}
+		}
+	}
+
+	nav {
+		display: none;
+	}
+}
+
+@media only screen and (min-width:1024px) {
+	header {
+		div {
+			width: 60px;
+			height: 100%;
+		}
+	}
+}
+
+@media only screen and (min-width:1440px) {
+	header {
+		div {
+			width: 70px;
+			height: 100%;
+		}
+	}
+}

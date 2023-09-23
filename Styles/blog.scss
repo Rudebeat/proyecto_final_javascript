@@ -1,0 +1,87 @@
+﻿$color_1: white;
+
+/* Artículos */
+/* Media Queries */
+body {
+	background-image: none;
+}
+
+.fondo {
+	background-image: url(../img/bio_Clara_Tabares.jpg);
+	background-size: cover;
+	height: 100vh;
+	position: relative;
+}
+
+.namePage {
+	font-size: 80px;
+	color: $color_1;
+	text-shadow: 3px 3px 10px rgb(0, 0, 0, 0.5);
+	position: absolute;
+	bottom: 10%;
+	left: 5%;
+}
+
+.encabezadoGridBlog {
+	text-align: center;
+	padding: 5% 20%;
+
+	h2 {
+		padding: 20px;
+	}
+}
+
+.gridBlog {
+	height: auto;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: 1fr;
+	column-gap: 60px;
+	padding: 0 5% 5%;
+}
+
+.gridArticulo {
+	box-shadow: 0 6px 16px 1px rgb(47, 64, 50, 0.4);
+	border-radius: 10px;
+
+	img {
+		height: 100px;
+		width: 100%;
+		object-fit: cover;
+		border-radius: 10px 10px 0 0;
+	}
+
+	h3 {
+		padding: 25px 25px 10px;
+	}
+
+	p {
+		padding: 10px 25px 25px;
+	}
+}
+
+@media only screen and (max-width: 560px) {
+	.gridBlog {
+		grid-template-columns: repeat(1, 1fr);
+		grid-template-rows: repeat(3, 1fr);
+		row-gap: 30px;
+		padding: 5%;
+	}
+}
+
+@media only screen and (min-width:561px) and (max-width: 767px) {
+	.gridBlog {
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		row-gap: 15px;
+		column-gap: 30px;
+		padding: 5%;
+	}
+}
+
+@media only screen and (max-width:1024px) {
+	.gridBlog {
+		column-gap: 15px;
+		padding: 0 5% 5%;
+	}
+}

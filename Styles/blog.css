@@ -1,90 +1,84 @@
+@charset "UTF-8";
+/* Artículos */
+/* Media Queries */
 body {
-    background-image: none;
+  background-image: none;
 }
 
 .fondo {
-    background-image: url(../img/bio_Clara_Tabares.jpg);
-    background-size: cover;
-    height: 100vh;
-    position: relative;
+  background-image: url(../img/bio_Clara_Tabares.jpg);
+  background-size: cover;
+  height: 100vh;
+  position: relative;
 }
 
 .namePage {
-    font-size: 80px;
-    color: white;
-    text-shadow: 3px 3px 10px rgb(0, 0, 0, 0.5);
-
-    position: absolute;
-    bottom: 10%;
-    left: 5%;
+  font-size: 80px;
+  color: white;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
 }
-
-/* Artículos */
 
 .encabezadoGridBlog {
-    text-align: center;
-    padding: 5% 20%;
+  text-align: center;
+  padding: 5% 20%;
 }
-
 .encabezadoGridBlog h2 {
-    padding: 20px;
+  padding: 20px;
 }
 
 .gridBlog {
-    height: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr;
-    column-gap: 60px;
-    padding: 0 5% 5%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  -moz-column-gap: 60px;
+       column-gap: 60px;
+  padding: 0 5% 5%;
 }
 
 .gridArticulo {
-    box-shadow: 0 6px 16px 1px rgb(47, 64, 50, 0.4);
-    border-radius: 10px;
+  box-shadow: 0 6px 16px 1px rgba(47, 64, 50, 0.4);
+  border-radius: 10px;
 }
-
 .gridArticulo img {
-    height: 100px;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 10px 10px 0 0;
+  height: 100px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px 10px 0 0;
 }
-
 .gridArticulo h3 {
-    padding: 25px 25px 10px;
+  padding: 25px 25px 10px;
 }
-
 .gridArticulo p {
-    padding: 10px 25px 25px;
+  padding: 10px 25px 25px;
 }
-
-
-/* Media Queries */
 
 @media only screen and (max-width: 560px) {
-    .gridBlog {
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-        row-gap: 30px;
-        padding: 5%;
-    }
+  .gridBlog {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 30px;
+    padding: 5%;
+  }
 }
-
-@media only screen and (min-width:561px) and (max-width: 767px) {
-    .gridBlog {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        row-gap: 15px;
-        column-gap: 30px;
-        padding: 5%;
-    }
+@media only screen and (min-width: 561px) and (max-width: 767px) {
+  .gridBlog {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 15px;
+    -moz-column-gap: 30px;
+         column-gap: 30px;
+    padding: 5%;
+  }
 }
-
-@media only screen and (max-width:1024px) {
-
-    .gridBlog {
-        column-gap: 15px;
-        padding: 0 5% 5%;
-    }
-}
+@media only screen and (max-width: 1024px) {
+  .gridBlog {
+    -moz-column-gap: 15px;
+         column-gap: 15px;
+    padding: 0 5% 5%;
+  }
+}/*# sourceMappingURL=blog.css.map */
