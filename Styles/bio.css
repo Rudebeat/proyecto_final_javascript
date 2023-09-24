@@ -1,5 +1,3 @@
-/* Main */
-/* Media queries */
 body {
   background-image: none;
 }
@@ -9,6 +7,14 @@ body {
   background-size: cover;
   height: 100vh;
   position: relative;
+}
+.fondo .namePage {
+  font-size: 80px;
+  color: white;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
 }
 
 #bio {
@@ -20,42 +26,32 @@ body {
 #bio p {
   width: 60%;
 }
-
-.boxFloat {
+#bio .boxFloat {
   position: absolute;
   right: 12%;
   top: -120%;
 }
-.boxFloat img {
+#bio .boxFloat img {
   height: 400px;
   width: 300px;
 }
 
-.namePage {
-  font-size: 80px;
-  color: white;
-  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
-  position: absolute;
-  bottom: 10%;
-  left: 5%;
-}
-
 @media only screen and (max-width: 970px) {
-  .boxFloat {
-    display: none;
-  }
   .fondo {
     height: 80vh;
   }
   #bio p {
     width: auto;
   }
+  #bio .boxFloat {
+    display: none;
+  }
 }
 @media only screen and (min-width: 971px) {
   #bio p {
     width: 55%;
   }
-  .boxFloat {
+  #bio .boxFloat {
     right: 8%;
   }
 }
@@ -63,7 +59,7 @@ body {
   #bio p {
     width: 60%;
   }
-  .boxFloat {
+  #bio .boxFloat {
     right: 10%;
   }
 }/*# sourceMappingURL=bio.css.map */

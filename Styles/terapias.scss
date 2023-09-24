@@ -1,6 +1,6 @@
-﻿$color_1: white;
+﻿@import '../recursosVisuales';
 
-/* Artículos */
+
 body {
 	background-image: none;
 }
@@ -10,16 +10,20 @@ body {
 	background-size: cover;
 	height: 100vh;
 	position: relative;
+
+	.namePage {
+		font-size: 80px;
+		color: $blanco;
+		text-shadow: 3px 3px 10px rgb(0, 0, 0, 0.5);
+		position: absolute;
+		bottom: 10%;
+		left: 5%;
+	}
 }
 
-.namePage {
-	font-size: 80px;
-	color: $color_1;
-	text-shadow: 3px 3px 10px rgb(0, 0, 0, 0.5);
-	position: absolute;
-	bottom: 10%;
-	left: 5%;
-}
+
+// terapias
+
 
 .encabezadoGridTerapias {
 	text-align: center;
@@ -38,32 +42,27 @@ body {
 	row-gap: 60px;
 	width: 80%;
 	margin: 0 auto 10%;
-}
 
-.itemTerapias {
-	box-shadow: 0 6px 16px 1px rgb(47, 64, 50, 0.4);
-	border-radius: 10px;
-	display: flex;
-	align-items: center;
-
-	img {
-		height: 100%;
-		width: 30%;
-		object-fit: cover;
-		border-radius: 10px 0 0 10px;
+	.itemTerapias {
+		box-shadow: 0 6px 16px 1px rgb(47, 64, 50, 0.4);
+		border-radius: 10px;
+		display: flex;
+		align-items: center;
+	
+		img {
+			height: 100%;
+			width: 30%;
+			object-fit: cover;
+			border-radius: 10px 0 0 10px;
+		}
+	
+		.contenidoCardTerapias {
+			padding: 5%;
+		
+			h3 {
+				padding-bottom: 10px;
+			}
+		}
 	}
 }
 
-.contenidoCardTerapias {
-	padding: 5%;
-
-	h3 {
-		padding-bottom: 10px;
-	}
-}
-
-.gridArticulo {
-	p {
-		padding: 10px 25px 25px;
-	}
-}

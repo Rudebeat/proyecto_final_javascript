@@ -1,7 +1,3 @@
-/* Main */
-/* Terapias */
-/* Enfermedades */
-/* Clientes felices */
 main {
   display: flex;
   justify-content: space-evenly;
@@ -9,19 +5,17 @@ main {
   padding: 3%;
   margin-bottom: 10%;
 }
-
-.logo {
+main .logo {
   width: 40%;
   height: auto;
   display: flex;
   align-items: center;
 }
-.logo img {
+main .logo img {
   width: 100%;
   height: auto;
 }
-
-.contentMain {
+main .contentMain {
   width: 40%;
   height: auto;
   display: flex;
@@ -29,12 +23,12 @@ main {
   justify-content: center;
   padding: 30px;
 }
-.contentMain div {
+main .contentMain div {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 }
-.contentMain p {
+main .contentMain p {
   padding-right: 10%;
 }
 
@@ -43,8 +37,7 @@ section#terapias {
   display: flex;
   margin-bottom: 5%;
 }
-
-.contentTerapias {
+section#terapias .contentTerapias {
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -52,15 +45,14 @@ section#terapias {
   align-items: start;
   padding: 5%;
 }
-
-.imagenTerapias {
+section#terapias .imagenTerapias {
   width: 50%;
   overflow: hidden;
   display: flex;
   align-items: center;
   border-radius: 30px 0 0 30px;
 }
-.imagenTerapias img {
+section#terapias .imagenTerapias img {
   width: 100%;
 }
 
@@ -68,28 +60,25 @@ section#enfermedades {
   height: auto;
   padding: 50px 0;
 }
-
-#enfermedades h2 {
+section#enfermedades h2 {
   text-align: center;
   padding: 5%;
 }
-
-.contenedorListas {
+section#enfermedades .contenedorSistemas {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
   align-content: space-evenly;
   height: auto;
 }
-
-.sistema {
+section#enfermedades .contenedorSistemas .sistema {
   width: 30%;
   padding: 30px;
   margin: 2% 0;
   border-radius: 30px;
   box-shadow: 0 6px 10px 1px rgba(0, 0, 0, 0.2);
 }
-.sistema ul {
+section#enfermedades .contenedorSistemas .sistema ul {
   padding: 5% 10%;
 }
 
@@ -98,34 +87,32 @@ section#clientes {
   padding: 50px;
   margin-bottom: 10%;
 }
+section#clientes h2 {
+  text-align: center;
+  display: block;
+  padding: 5%;
+}
 
 .contenedorTestimonios {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
-
-#clientes h2 {
-  text-align: center;
-  display: block;
-  padding: 5%;
-}
-#clientes .testimonio {
+.contenedorTestimonios .testimonio {
   background-color: #6DAB8E;
   width: 30%;
   padding: 5%;
   border-radius: 15px;
   box-shadow: 0 6px 16px 1px rgba(47, 64, 50, 0.4);
 }
-#clientes img {
-  width: 20%;
-}
-
-.testimonio div {
+.contenedorTestimonios .testimonio div {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
 }
-.testimonio div h4 {
+.contenedorTestimonios .testimonio div h4 {
   margin-left: 10px;
+}
+.contenedorTestimonios .testimonio div img {
+  width: 20%;
 }/*# sourceMappingURL=home.css.map */

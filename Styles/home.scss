@@ -1,147 +1,166 @@
-﻿$background-color_1: #6DAB8E;
+﻿@import '../recursosVisuales';
 
-/* Main */
-/* Terapias */
-/* Enfermedades */
-/* Clientes felices */
+
+// Main
+
 main {
 	display: flex;
 	justify-content: space-evenly;
 	height: 80vh;
 	padding: 3%;
 	margin-bottom: 10%;
-}
 
-.logo {
-	width: 40%;
-	height: auto;
-	display: flex;
-	align-items: center;
-
-	img {
-		width: 100%;
+	.logo {
+		width: 40%;
 		height: auto;
+		display: flex;
+		align-items: center;
+
+		img {
+			width: 100%;
+			height: auto;
+		}
 	}
-}
 
-.contentMain {
-	width: 40%;
-	height: auto;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	padding: 30px;
-
-	div {
+	.contentMain {
+		width: 40%;
+		height: auto;
 		display: flex;
 		flex-direction: column;
-		justify-content: space-evenly;
+		justify-content: center;
+		padding: 30px;
+
+		div {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-evenly;
+		}
+
+		p {
+			padding-right: 10%;
+		}
 	}
 
-	p {
-		padding-right: 10%;
-	}
 }
+
+
+// Terapias
+
 
 section#terapias {
 	height: auto;
 	display: flex;
 	margin-bottom: 5%;
-}
 
-.contentTerapias {
-	width: 50%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: start;
-	padding: 5%;
-}
-
-.imagenTerapias {
-	width: 50%;
-	overflow: hidden;
-	display: flex;
-	align-items: center;
-	border-radius: 30px 0 0 30px;
-
-	img {
-		width: 100%;
+	.contentTerapias {
+		width: 50%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: start;
+		padding: 5%;
 	}
+
+	.imagenTerapias {
+		width: 50%;
+		overflow: hidden;
+		display: flex;
+		align-items: center;
+		border-radius: 30px 0 0 30px;
+
+		img {
+			width: 100%;
+		}
+	}
+
 }
+
+
+
+
+
+// Enfermedades
 
 section#enfermedades {
 	height: auto;
 	padding: 50px 0;
-}
 
-#enfermedades {
 	h2 {
 		text-align: center;
 		padding: 5%;
 	}
-}
 
-.contenedorListas {
-	display: flex;
-	justify-content: space-evenly;
-	flex-wrap: wrap;
-	align-content: space-evenly;
-	height: auto;
-}
+	.contenedorSistemas {
+		display: flex;
+		justify-content: space-evenly;
+		flex-wrap: wrap;
+		align-content: space-evenly;
+		height: auto;
 
-.sistema {
-	width: 30%;
-	padding: 30px;
-	margin: 2% 0;
-	border-radius: 30px;
-	box-shadow: 0 6px 10px 1px rgba(0, 0, 0, 0.2);
+		.sistema {
+			width: 30%;
+			padding: 30px;
+			margin: 2% 0;
+			border-radius: 30px;
+			box-shadow: 0 6px 10px 1px rgba(0, 0, 0, 0.2);
 
-	ul {
-		padding: 5% 10%;
+			ul {
+				padding: 5% 10%;
+			}
+		}
+
 	}
+
 }
+
+
+
+
+
+
+// Clientes
+
 
 section#clientes {
 	height: auto;
 	padding: 50px;
 	margin-bottom: 10%;
-}
 
-.contenedorTestimonios {
-	display: flex;
-	justify-content: space-evenly;
-	align-items: center;
-}
-
-#clientes {
 	h2 {
 		text-align: center;
 		display: block;
 		padding: 5%;
 	}
 
+}
+
+.contenedorTestimonios {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+
 	.testimonio {
-		background-color: $background-color_1;
+		background-color: $color1;
 		width: 30%;
 		padding: 5%;
 		border-radius: 15px;
 		box-shadow: 0 6px 16px 1px rgb(47, 64, 50, 0.4);
-	}
-
-	img {
-		width: 20%;
-	}
-}
-
-.testimonio {
-	div {
-		display: flex;
-		align-items: center;
-		margin-bottom: 20px;
-
-		h4 {
-			margin-left: 10px;
+	
+		div {
+			display: flex;
+			align-items: center;
+			margin-bottom: 20px;
+	
+			h4 {
+				margin-left: 10px;
+			}
+		
+			img {
+				width: 20%;
+			}
+		
 		}
+	
 	}
+
 }
