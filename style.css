@@ -38,39 +38,52 @@ header .contenedorNav {
   height: 10vh;
   width: 95%;
   margin: auto;
-  padding: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   background-color: white;
   box-shadow: 0 10px 16px -10px rgba(47, 64, 50, 0.3);
   border-radius: 10px;
 }
-header .contenedorNav div {
+header .contenedorNav .navBS {
+  background-color: transparent !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
   height: 100%;
-  width: auto;
 }
-header .contenedorNav div img {
+header .contenedorNav .navBS div.navbarColapsado button.navbar-toggler {
+  background-color: transparent !important;
+  border: none;
+}
+header .contenedorNav .navBS div.navbarColapsado button.navbar-toggler i {
+  color: white;
+}
+header .contenedorNav .navBS .logoMenu {
   height: 100%;
 }
-header .contenedorNav nav {
-  height: auto;
-  font-size: 16px;
-}
-header .contenedorNav nav ul {
-  display: flex;
-  align-items: center;
+header .contenedorNav .navBS .logoMenu a {
+  padding: 0;
   margin: 0;
+  height: 100%;
 }
-header .contenedorNav nav ul li {
-  list-style: none;
-  margin-right: 20px;
+header .contenedorNav .navBS .logoMenu img {
+  height: 100%;
+  width: 100%;
 }
-header .contenedorNav nav ul li a {
-  color: #2F4032;
+header .contenedorNav .navBS li {
+  margin: 0 10px;
 }
-header .contenedorNav nav ul li a:hover {
-  color: #57846C;
+header .contenedorNav .navBS li a {
+  color: #6DAB8E !important;
+}
+header .contenedorNav .navBS li a:hover {
+  color: #57846C !important;
+}
+header .contenedorNav .navBS li .active {
+  font-weight: 800;
+  color: #2F4032 !important;
+}
+header .contenedorNav .navBS .btnAgendarCitaMenu {
+  margin-left: 25px;
+  padding: 10px 20px;
 }
 
 footer {
@@ -124,35 +137,52 @@ footer .newsletter form .botonNewsletter {
   text-decoration: underline;
 }
 
-@media only screen and (max-width: 584px) {
-  header .contenedorNav {
-    background-color: white;
+@media only screen and (max-width: 991px) {
+  header {
     height: auto;
-    width: auto;
+  }
+  header .contenedorNav {
+    width: -moz-fit-content;
+    width: fit-content;
+    height: auto;
+    margin: 0;
     position: fixed;
     right: 20px;
+    background-color: #6DAB8E !important;
   }
-  header .contenedorNav div {
-    height: 5vh;
-    width: auto;
+  header .contenedorNav .navBS {
+    padding: 0;
+    justify-content: end;
   }
-  header .contenedorNav div img {
-    height: 100%;
-    width: auto;
-  }
-  header .contenedorNav nav {
+  header .contenedorNav .navBS .logoMenu {
     display: none;
   }
-}
-@media only screen and (min-width: 1024px) {
-  header div {
-    width: 60px;
-    height: 100%;
+  header .contenedorNav .navBS .navbarColapsado {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
   }
-}
-@media only screen and (min-width: 1440px) {
-  header div {
-    width: 70px;
-    height: 100%;
+  header .contenedorNav .navBS .navbarColapsado i {
+    font-size: xx-large;
+    text-align: end;
+  }
+  header .contenedorNav .navBS .navbarColapsado div ul {
+    text-align: right;
+    padding: 5px 20px 10px 20px;
+  }
+  header .contenedorNav .navBS .navbarColapsado div ul li a {
+    color: white !important;
+  }
+  header .contenedorNav .navBS .navbarColapsado div ul li .active {
+    font-weight: 800;
+    color: white !important;
+  }
+  header .contenedorNav .navBS .navbarColapsado div ul .btnAgendarCitaMenu {
+    background-color: white !important;
+    margin: 10px 0;
+    padding: 10px 0;
+  }
+  header .contenedorNav .navBS .navbarColapsado div ul .btnAgendarCitaMenu a {
+    color: #57846C !important;
   }
 }/*# sourceMappingURL=style.css.map */

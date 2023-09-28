@@ -10,6 +10,10 @@
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <!-- BS 4.6 fin -->
 
+    <!-- íconos de BS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Fin íconos de BS -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -38,7 +42,7 @@
         <!-- Header -->
 
         <header>
-            <section class="contenedorNav">
+            <!-- <section class="contenedorNav">
 
                 <div>
                     <a href="../index.html"><img src="../img/isotipo.png" alt="Dra. Clara Tabares"></a>
@@ -53,6 +57,49 @@
                         <li><button type="button" class="btn btn-success btn-sm"><a href="#">Agendamiento</a></li>
                     </ul>
                 </nav>
+            </section> -->
+
+            <section class="contenedorNav">
+
+                <nav class="navBS navbar navbar-expand-lg navbar-light bg-light">
+                    <div class="logoMenu">
+                        <a class="navbar-brand" href="../index.html"><img src="../img/isotipo.png"
+                                alt="Dra. Clara Tabares"></a>
+
+                    </div>
+
+
+                    <div class="navbarColapsado">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                            aria-label="Toggle navigation">
+
+                            <i class="bi bi-list"></i>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="../index.html">Inicio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../pages/bio.html">¿Quién es la Dra. Clara?
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../pages/terapias.html">Terapias</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../pages/blog.html">Blog</a>
+                                </li>
+                                <button type="button" class="btn btn-success btn-sm btnAgendarCitaMenu"><a
+                                        href="#">Agendar cita</a>
+                            </ul>
+                        </div>
+
+                    </div>
+                </nav>
+
             </section>
 
         </header>
@@ -63,37 +110,37 @@
     </div>
 
     <!-- <section id="articulos"> -->
-        <div class="encabezadoGridBlog">
-            <h2>Título para el blog</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae qui praesentium, vitae ipsum
-                molestiae atque consequuntur vero? Facere, quos explicabo!</p>
+    <div class="encabezadoGridBlog">
+        <h2>Título para el blog</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae qui praesentium, vitae ipsum
+            molestiae atque consequuntur vero? Facere, quos explicabo!</p>
+    </div>
+    <div class="gridBlog">
+        <div class="gridArticulo">
+            <img src="https://cdn.ethic.es/wp-content/uploads/2023/03/imagen.jpg" alt="">
+
+
+            <h3>Título del artículo</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, corporis.</p>
+
         </div>
-        <div class="gridBlog">
-            <div class="gridArticulo">
-                <img src="https://cdn.ethic.es/wp-content/uploads/2023/03/imagen.jpg" alt="">
+        <div class="gridArticulo">
+            <img src="https://cdn.ethic.es/wp-content/uploads/2023/03/imagen.jpg" alt="">
 
-
+            <div>
                 <h3>Título del artículo</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, corporis.</p>
-
-            </div>
-            <div class="gridArticulo">
-                <img src="https://cdn.ethic.es/wp-content/uploads/2023/03/imagen.jpg" alt="">
-
-                <div>
-                    <h3>Título del artículo</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, corporis.</p>
-                </div>
-            </div>
-            <div class="gridArticulo">
-                <img src="https://cdn.ethic.es/wp-content/uploads/2023/03/imagen.jpg" alt="">
-
-                <div>
-                    <h3>Título del artículo</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, corporis.</p>
-                </div>
             </div>
         </div>
+        <div class="gridArticulo">
+            <img src="https://cdn.ethic.es/wp-content/uploads/2023/03/imagen.jpg" alt="">
+
+            <div>
+                <h3>Título del artículo</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, corporis.</p>
+            </div>
+        </div>
+    </div>
     <!-- </section> -->
 
 

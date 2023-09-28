@@ -1,4 +1,4 @@
-﻿@import 'recursosVisuales';
+﻿@import '_recursosVisuales';
 
 
 // .botones {
@@ -64,50 +64,110 @@ header {
 		height: 10vh;
 		width: 95%;
 		margin: auto;
-		padding: 10px;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
+		// padding: 10px;
+		// display: flex;
+		// justify-content: space-between;
+		// align-items: center;
 		background-color: $blanco;
 		box-shadow: 0 10px 16px -10px rgba(47, 64, 50, 0.3);
 		border-radius: 10px;
 
 
-		div {
+
+		.navBS {
+			background-color: transparent !important;
+			display: flex !important;
+			align-items: center !important;
+			justify-content: space-between !important;
 			height: 100%;
-			width: auto;
 
-			img {
-				height: 100%;
-			}
-		}
+			div.navbarColapsado {
+				button.navbar-toggler {
+					background-color: transparent !important;
+					border: none;
 
-		nav {
-			height: auto;
-			font-size: 16px;
-
-			ul {
-				display: flex;
-				align-items: center;
-				margin: 0;
-
-				li {
-					list-style: none;
-					margin-right: 20px;
-
-					a {
-						color: $colorA;
-
-						&:hover {
-							color: $color2;
-						}
+					i {
+						color: $blanco;
 					}
+				}
+			}
 
+			.logoMenu {
+				height: 100%;
+
+				a {
+					padding: 0;
+					margin: 0;
+					height: 100%;
 				}
 
+				img {
+					height: 100%;
+					width: 100%;
+				}
+			}
+
+			li {
+				margin: 0 10px;
+
+				a {
+					color: $color1 !important;
+
+					&:hover {
+						color: $color2 !important;
+					}
+				}
+
+				.active {
+					font-weight: 800;
+					color: $colorA !important;
+				}
+			}
+
+
+			.btnAgendarCitaMenu {
+				margin-left: 25px;
+				padding: 10px 20px;
 			}
 
 		}
+
+
+		// div {
+		// 	height: 100%;
+		// 	width: auto;
+
+		// 	img {
+		// 		height: 100%;
+		// 	}
+		// }
+
+		// nav {
+		// 	height: auto;
+		// 	font-size: 16px;
+
+		// 	ul {
+		// 		display: flex;
+		// 		align-items: center;
+		// 		margin: 0;
+
+		// 		li {
+		// 			list-style: none;
+		// 			margin-right: 20px;
+
+		// 			a {
+		// 				color: $colorA;
+
+		// 				&:hover {
+		// 					color: $color2;
+		// 				}
+		// 			}
+
+		// 		}
+
+		// 	}
+
+		// }
 
 	}
 }
@@ -183,52 +243,120 @@ footer {
 
 // Media queries
 
-@media only screen and (max-width:584px) {
-
-
+@media only screen and (max-width:991px) {
 	header {
+		height: auto;
 
 		.contenedorNav {
-			background-color: $blanco;
+			width: fit-content;
 			height: auto;
-			width: auto;
+			margin: 0;
 			position: fixed;
 			right: 20px;
+			background-color: $color1 !important;
 
-			div {
-				height: 5vh;
-				width: auto;
+			.navBS {
+				padding: 0;
+				justify-content: end;
 
-				img {
-					height: 100%;
-					width: auto;
+				.logoMenu {
+					display: none;
+				}
 
+				.navbarColapsado {
+					display: flex;
+					flex-direction: column;
+					align-items: end;
+
+					i {
+						font-size: xx-large;
+						text-align: end;
+					}
+
+					div ul {
+						text-align: right;
+						padding: 5px 20px 10px 20px;
+
+						li {
+							a {
+								color: $blanco !important;
+
+							}
+
+							.active {
+								font-weight: 800;
+								color: $blanco !important;
+							}
+
+						}
+
+						.btnAgendarCitaMenu {
+							background-color: $blanco !important;
+							margin: 10px 0;
+							padding: 10px 0;
+
+							a {
+								color: $color2 !important;
+							}
+
+						}
+					}
 				}
 			}
-
-			nav {
-				display: none;
-			}
-
 		}
-	}
 
-}
-
-@media only screen and (min-width:1024px) {
-	header {
-		div {
-			width: 60px;
-			height: 100%;
-		}
 	}
 }
 
-@media only screen and (min-width:1440px) {
-	header {
-		div {
-			width: 70px;
-			height: 100%;
-		}
-	}
-}
+
+
+
+// @media only screen and (max-width:584px) {
+
+
+// 	header {
+
+// 		.contenedorNav {
+// 			background-color: $blanco;
+// 			height: auto;
+// 			width: auto;
+// 			position: fixed;
+// 			right: 20px;
+
+// 			div {
+// 				height: 5vh;
+// 				width: auto;
+
+// 				img {
+// 					height: 100%;
+// 					width: auto;
+
+// 				}
+// 			}
+
+// 			nav {
+// 				display: none;
+// 			}
+
+// 		}
+// 	}
+
+// }
+
+// @media only screen and (min-width:1024px) {
+// 	header {
+// 		div {
+// 			width: 60px;
+// 			height: 100%;
+// 		}
+// 	}
+// }
+
+// @media only screen and (min-width:1440px) {
+// 	header {
+// 		div {
+// 			width: 70px;
+// 			height: 100%;
+// 		}
+// 	}
+// }
