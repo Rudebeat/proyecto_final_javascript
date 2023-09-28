@@ -22,10 +22,14 @@ button a {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 a:hover {
-  text-decoration: none;
+  text-decoration: none !important;
+}
+
+.botones {
+  width: 200px !important;
 }
 
 header {
@@ -79,62 +83,34 @@ header .contenedorNav .navBS li a:hover {
 }
 header .contenedorNav .navBS li .active {
   font-weight: 800;
-  color: #2F4032 !important;
+  color: #57846C !important;
 }
 header .contenedorNav .navBS .btnAgendarCitaMenu {
   margin-left: 25px;
   padding: 10px 20px;
 }
 
-footer {
+.contenedorFooter {
+  background-color: #2F4032 !important;
+}
+.contenedorFooter .rrss {
   padding: 5%;
-  background-color: #2F4032;
-  height: auto;
+}
+.contenedorFooter .rrss h5 {
+  color: #6DAB8E;
+}
+.contenedorFooter .rrss i {
+  color: white;
+  font-size: x-large;
+}
+.contenedorFooter .news {
+  padding: 4%;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
-footer h4 {
-  padding: 15px 0;
-  color: white;
-}
-footer #redesSociales {
-  width: 10%;
-  height: auto;
-  align-self: center;
-}
-footer #redesSociales img {
-  width: 20%;
-}
-footer .newsletter {
-  width: 30%;
-  display: flex;
-  align-items: center;
-}
-footer .newsletter form {
-  width: 100%;
-}
-footer .newsletter form .email {
-  background-color: white;
-  color: #2F4032;
-  border: none;
-  height: auto;
-  width: 70%;
-  padding: 5px 0 5px 30px;
-  border-radius: 5px;
-  font-size: 16px;
-}
-footer .newsletter form .email::-moz-placeholder {
-  color: #2F4032;
-}
-footer .newsletter form .email::placeholder {
-  color: #2F4032;
-}
-footer .newsletter form .botonNewsletter {
-  background-color: transparent;
-  border: none;
-  margin-left: 20px;
+.contenedorFooter .news h4 {
   color: #6DAB8E;
-  text-decoration: underline;
 }
 
 @media only screen and (max-width: 991px) {

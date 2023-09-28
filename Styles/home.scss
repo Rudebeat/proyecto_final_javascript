@@ -1,6 +1,5 @@
 ﻿@import '../recursosVisuales';
 
-
 // Main
 
 main {
@@ -8,7 +7,7 @@ main {
 	justify-content: space-evenly;
 	height: 80vh;
 	padding: 3%;
-	margin-bottom: 10%;
+	margin: 5% 0;
 
 	.logo {
 		width: 40%;
@@ -49,24 +48,33 @@ main {
 
 section#terapias {
 	height: auto;
-	display: flex;
+	// display: flex;
+	// justify-content: center;
 	margin-bottom: 5%;
 
 	.contentTerapias {
-		width: 50%;
+		width: 70%;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		align-items: start;
-		padding: 5%;
+		align-items: center;
+		// padding: 5%;
+		margin: 0 auto;
+		text-align: center;
 	}
 
 	.imagenTerapias {
-		width: 50%;
-		overflow: hidden;
-		display: flex;
-		align-items: center;
-		border-radius: 30px 0 0 30px;
+		background-image: url(../svg/fondoTerapias.svg);
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+		width: 90%;
+		height: 300px;
+		margin: 0 auto;
+		// position: relative;
+		// // overflow: hidden;
+		// display: flex;
+		// align-items: center;
 
 		img {
 			width: 100%;
@@ -83,7 +91,7 @@ section#terapias {
 
 section#enfermedades {
 	height: auto;
-	padding: 50px 0;
+	padding: 0;
 
 	h2 {
 		text-align: center;
@@ -103,6 +111,21 @@ section#enfermedades {
 			margin: 2% 0;
 			border-radius: 30px;
 			box-shadow: 0 6px 10px 1px rgba(0, 0, 0, 0.2);
+
+			div {
+				display: flex;
+				align-items: center;
+
+				img {
+					height: 50px;
+					width: auto;
+					margin-right: 15px;
+				}
+
+				h3 {
+					color: $color2;
+				}
+			}
 
 			ul {
 				padding: 5% 10%;
@@ -145,22 +168,18 @@ section#clientes {
 		padding: 5%;
 		border-radius: 15px;
 		box-shadow: 0 6px 16px 1px rgb(47, 64, 50, 0.4);
-	
+
 		div {
 			display: flex;
 			align-items: center;
 			margin-bottom: 20px;
-	
+
 			h4 {
 				margin-left: 10px;
 			}
-		
-			img {
-				width: 20%;
-			}
-		
+
 		}
-	
+
 	}
 
 }

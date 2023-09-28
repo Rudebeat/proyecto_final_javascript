@@ -44,11 +44,15 @@ button {
 }
 
 a {
-	text-decoration: none;
+	text-decoration: none !important;
 
 	&:hover {
-		text-decoration: none;
+		text-decoration: none !important;
 	}
+}
+
+.botones {
+	width: 200px !important;
 }
 
 
@@ -120,7 +124,7 @@ header {
 
 				.active {
 					font-weight: 800;
-					color: $colorA !important;
+					color: $color2 !important;
 				}
 			}
 
@@ -179,64 +183,95 @@ header {
 
 // Footer
 
-footer {
-	padding: 5%;
-	background-color: $colorA;
-	height: auto;
-	display: flex;
-	justify-content: space-between;
+.contenedorFooter {
+	background-color: $colorA !important;
 
-	h4 {
-		padding: 15px 0;
-		color: $blanco;
-	}
+	.rrss {
 
-	#redesSociales {
-		width: 10%;
-		height: auto;
-		align-self: center;
+		padding: 5%;
 
-		img {
-			width: 20%;
+		h5 {
+			color: $color1;
+		}
+
+		i {
+			color: $blanco;
+			font-size: x-large;
 		}
 	}
 
-	.newsletter {
-		width: 30%;
+	.news {
+		padding: 4%;
 		display: flex;
-		align-items: center;
+		flex-direction: column;
+		justify-content: space-between;
 
-		form {
-			width: 100%;
-
-			.email {
-				background-color: $blanco;
-				color: $colorA;
-				border: none;
-				height: auto;
-				width: 70%;
-				padding: 5px 0 5px 30px;
-				border-radius: 5px;
-				font-size: 16px;
-
-				&::placeholder {
-					color: $colorA;
-				}
-			}
-
-			.botonNewsletter {
-				background-color: transparent;
-				border: none;
-				margin-left: 20px;
-				color: $color1;
-				text-decoration: underline;
-			}
-
+		h4 {
+			color: $color1;
 		}
 
-	}
 
+	}
 }
+
+// footer {
+// 	padding: 5%;
+// 	background-color: $colorA;
+// 	height: auto;
+// 	display: flex;
+// 	justify-content: space-between;
+
+// 	h4 {
+// 		padding: 15px 0;
+// 		color: $blanco;
+// 	}
+
+// 	#redesSociales {
+// 		width: 10%;
+// 		height: auto;
+// 		align-self: center;
+
+// 		img {
+// 			width: 20%;
+// 		}
+// 	}
+
+// 	.newsletter {
+// 		width: 30%;
+// 		display: flex;
+// 		align-items: center;
+
+// 		form {
+// 			width: 100%;
+
+// 			.email {
+// 				background-color: $blanco;
+// 				color: $colorA;
+// 				border: none;
+// 				height: auto;
+// 				width: 70%;
+// 				padding: 5px 0 5px 30px;
+// 				border-radius: 5px;
+// 				font-size: 16px;
+
+// 				&::placeholder {
+// 					color: $colorA;
+// 				}
+// 			}
+
+// 			.botonNewsletter {
+// 				background-color: transparent;
+// 				border: none;
+// 				margin-left: 20px;
+// 				color: $color1;
+// 				text-decoration: underline;
+// 			}
+
+// 		}
+
+// 	}
+
+// }
 
 
 

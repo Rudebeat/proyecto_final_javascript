@@ -3,7 +3,7 @@ main {
   justify-content: space-evenly;
   height: 80vh;
   padding: 3%;
-  margin-bottom: 10%;
+  margin: 5% 0;
 }
 main .logo {
   width: 40%;
@@ -34,23 +34,25 @@ main .contentMain p {
 
 section#terapias {
   height: auto;
-  display: flex;
   margin-bottom: 5%;
 }
 section#terapias .contentTerapias {
-  width: 50%;
+  width: 70%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: start;
-  padding: 5%;
+  align-items: center;
+  margin: 0 auto;
+  text-align: center;
 }
 section#terapias .imagenTerapias {
-  width: 50%;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  border-radius: 30px 0 0 30px;
+  background-image: url(../svg/fondoTerapias.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 90%;
+  height: 300px;
+  margin: 0 auto;
 }
 section#terapias .imagenTerapias img {
   width: 100%;
@@ -58,7 +60,7 @@ section#terapias .imagenTerapias img {
 
 section#enfermedades {
   height: auto;
-  padding: 50px 0;
+  padding: 0;
 }
 section#enfermedades h2 {
   text-align: center;
@@ -77,6 +79,18 @@ section#enfermedades .contenedorSistemas .sistema {
   margin: 2% 0;
   border-radius: 30px;
   box-shadow: 0 6px 10px 1px rgba(0, 0, 0, 0.2);
+}
+section#enfermedades .contenedorSistemas .sistema div {
+  display: flex;
+  align-items: center;
+}
+section#enfermedades .contenedorSistemas .sistema div img {
+  height: 50px;
+  width: auto;
+  margin-right: 15px;
+}
+section#enfermedades .contenedorSistemas .sistema div h3 {
+  color: #57846C;
 }
 section#enfermedades .contenedorSistemas .sistema ul {
   padding: 5% 10%;
@@ -112,7 +126,4 @@ section#clientes h2 {
 }
 .contenedorTestimonios .testimonio div h4 {
   margin-left: 10px;
-}
-.contenedorTestimonios .testimonio div img {
-  width: 20%;
 }/*# sourceMappingURL=home.css.map */
