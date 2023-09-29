@@ -33,11 +33,13 @@ body {
 	}
 
 	.boxFloat {
+		display: none;
 		position: absolute;
 		right: 12%;
 		top: -120%;
-	
+
 		img {
+			display: none;
 			height: 400px;
 			width: 300px;
 		}
@@ -52,7 +54,7 @@ body {
 // MediaQueries
 
 @media only screen and (max-width:970px) {
-	
+
 
 	.fondo {
 		height: 80vh;
@@ -80,7 +82,7 @@ body {
 		}
 	}
 
-	
+
 }
 
 @media only screen and (min-width:1024px) {
@@ -94,5 +96,5 @@ body {
 		}
 	}
 
-	
+
 }
