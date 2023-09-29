@@ -27,11 +27,13 @@ body {
   width: 60%;
 }
 #bio .boxFloat {
+  display: none;
   position: absolute;
   right: 12%;
   top: -120%;
 }
 #bio .boxFloat img {
+  display: none;
   height: 400px;
   width: 300px;
 }
