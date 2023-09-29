@@ -48,8 +48,6 @@ main {
 
 section#terapias {
 	height: auto;
-	// display: flex;
-	// justify-content: center;
 	margin-bottom: 5%;
 
 	.contentTerapias {
@@ -58,7 +56,6 @@ section#terapias {
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		// padding: 5%;
 		margin: 0 auto;
 		text-align: center;
 	}
@@ -71,10 +68,6 @@ section#terapias {
 		width: 90%;
 		height: 300px;
 		margin: 0 auto;
-		// position: relative;
-		// // overflow: hidden;
-		// display: flex;
-		// align-items: center;
 
 		img {
 			width: 100%;

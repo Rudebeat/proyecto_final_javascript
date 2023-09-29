@@ -1,21 +1,6 @@
 ﻿@import '_recursosVisuales';
 
 
-// .botones {
-//     width: 250px;
-//     height: auto;
-//     border-radius: 10px;
-//     padding: 15px;
-//     display: block;
-
-//     color: white;
-//     text-decoration: none;
-//     margin-top: 10%;
-//     text-align: center;
-// }
-
-
-
 // Generales
 
 * {
@@ -72,10 +57,6 @@ header {
 		height: 10vh;
 		width: 95%;
 		margin: auto;
-		// padding: 10px;
-		// display: flex;
-		// justify-content: space-between;
-		// align-items: center;
 		background-color: $blanco;
 		box-shadow: 0 10px 16px -10px rgba(47, 64, 50, 0.3);
 		border-radius: 10px;
@@ -141,41 +122,7 @@ header {
 		}
 
 
-		// div {
-		// 	height: 100%;
-		// 	width: auto;
-
-		// 	img {
-		// 		height: 100%;
-		// 	}
-		// }
-
-		// nav {
-		// 	height: auto;
-		// 	font-size: 16px;
-
-		// 	ul {
-		// 		display: flex;
-		// 		align-items: center;
-		// 		margin: 0;
-
-		// 		li {
-		// 			list-style: none;
-		// 			margin-right: 20px;
-
-		// 			a {
-		// 				color: $colorA;
-
-		// 				&:hover {
-		// 					color: $color2;
-		// 				}
-		// 			}
-
-		// 		}
-
-		// 	}
-
-		// }
+		
 
 	}
 }
@@ -213,7 +160,6 @@ header {
 		h4 {
 			color: $color1;
 		}
-
 
 	}
 }
@@ -287,56 +233,3 @@ header {
 
 	}
 }
-
-
-
-
-// @media only screen and (max-width:584px) {
-
-
-// 	header {
-
-// 		.contenedorNav {
-// 			background-color: $blanco;
-// 			height: auto;
-// 			width: auto;
-// 			position: fixed;
-// 			right: 20px;
-
-// 			div {
-// 				height: 5vh;
-// 				width: auto;
-
-// 				img {
-// 					height: 100%;
-// 					width: auto;
-
-// 				}
-// 			}
-
-// 			nav {
-// 				display: none;
-// 			}
-
-// 		}
-// 	}
-
-// }
-
-// @media only screen and (min-width:1024px) {
-// 	header {
-// 		div {
-// 			width: 60px;
-// 			height: 100%;
-// 		}
-// 	}
-// }
-
-// @media only screen and (min-width:1440px) {
-// 	header {
-// 		div {
-// 			width: 70px;
-// 			height: 100%;
-// 		}
-// 	}
-// }
