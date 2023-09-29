@@ -147,18 +147,28 @@
     <!-- Footer -->
 
     <footer>
-        <div id="redesSociales">
-            <h4>Sígueme en</h4>
-            <img src="../ico/instagram.svg" alt="Instagram">
-        </div>
-        <div class="newsletter">
-            <form action="post">
-                <h4>Suscríbete a nuestro newsletter</h4>
-                <div>
-                    <input class="email" type="email" placeholder="tumail@example.com">
-                    <input class="botonNewsletter" type="submit" value="Suscribir">
+
+        <div class="contenedorFooter container-fluid">
+            <div class="row">
+                <div class="rrss col-6">
+                    <h5>Sígueme en</h5>
+                    <a href="https://www.instagram.com/draclaratabares/" target="_blank">
+                        <i class="bi bi-instagram"></i></a>
                 </div>
-            </form>
+
+                <div class="news col-6">
+                    <h4>Suscríbete a nuestro newsletter</h4>
+                    <form action="post">
+                    <div class="input-group mb-3">
+                        <input type="email" class="form-control" placeholder="ejemplo@tucorreo.com"
+                            aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary" type="button" id="button-addon2">Suscribirme</button>
+                        </div>
+                    </div>
+                    </form>
+                </div>
+            </div>
         </div>
     </footer>
 

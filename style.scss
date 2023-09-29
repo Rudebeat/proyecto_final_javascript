@@ -55,6 +55,10 @@ a {
 	width: 200px !important;
 }
 
+span{
+	font-weight: 900;
+}
+
 
 // Header
 
@@ -213,65 +217,6 @@ header {
 
 	}
 }
-
-// footer {
-// 	padding: 5%;
-// 	background-color: $colorA;
-// 	height: auto;
-// 	display: flex;
-// 	justify-content: space-between;
-
-// 	h4 {
-// 		padding: 15px 0;
-// 		color: $blanco;
-// 	}
-
-// 	#redesSociales {
-// 		width: 10%;
-// 		height: auto;
-// 		align-self: center;
-
-// 		img {
-// 			width: 20%;
-// 		}
-// 	}
-
-// 	.newsletter {
-// 		width: 30%;
-// 		display: flex;
-// 		align-items: center;
-
-// 		form {
-// 			width: 100%;
-
-// 			.email {
-// 				background-color: $blanco;
-// 				color: $colorA;
-// 				border: none;
-// 				height: auto;
-// 				width: 70%;
-// 				padding: 5px 0 5px 30px;
-// 				border-radius: 5px;
-// 				font-size: 16px;
-
-// 				&::placeholder {
-// 					color: $colorA;
-// 				}
-// 			}
-
-// 			.botonNewsletter {
-// 				background-color: transparent;
-// 				border: none;
-// 				margin-left: 20px;
-// 				color: $color1;
-// 				text-decoration: underline;
-// 			}
-
-// 		}
-
-// 	}
-
-// }
 
 
 

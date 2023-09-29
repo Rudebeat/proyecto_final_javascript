@@ -32,6 +32,10 @@ a:hover {
   width: 200px !important;
 }
 
+span {
+  font-weight: 900;
+}
+
 header {
   width: 100%;
   position: fixed;
