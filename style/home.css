@@ -2,36 +2,82 @@ main {
   display: flex;
   justify-content: space-evenly;
   height: 80vh;
-  padding: 3%;
+  padding: 0;
   margin: 5% 0;
+  padding: 5%;
 }
 main .logo {
-  width: 40%;
-  height: auto;
-  display: flex;
-  align-items: center;
-}
-main .logo img {
-  width: 100%;
-  height: auto;
-}
-main .contentMain {
-  width: 40%;
-  height: auto;
+  height: 100%;
+  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 30px;
+  align-items: center;
 }
-main .contentMain div {
+main .logo img {
+  width: 50%;
+  height: auto;
+}
+main .logo span {
+  font-family: "Cormorant Infant", serif;
+  font-size: 40px;
+  line-height: 50px;
+  text-align: center;
+  padding: 10px 0;
+}
+main .logo span br {
+  display: none;
+}
+main .contentMain {
+  width: 50%;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+main .contentMain h1 {
+  width: 80%;
 }
 main .contentMain p {
-  padding-right: 10%;
+  width: 80%;
 }
 
+@media only screen and (min-width: 1025px) {
+  main .logo img {
+    width: 50%;
+  }
+  main .logo span {
+    font-size: 60px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  main {
+    flex-direction: column;
+    justify-content: initial;
+  }
+  main .logo {
+    width: 100%;
+    flex-direction: initial;
+    justify-content: center;
+  }
+  main .logo img {
+    width: 30%;
+  }
+  main .logo span {
+    text-align: left;
+    padding-left: 2%;
+  }
+  main .logo span br {
+    display: initial;
+  }
+  main .contentMain {
+    padding: 5%;
+    width: 100%;
+    text-align: center;
+  }
+}
 section#terapias {
   height: auto;
   margin-bottom: 5%;
