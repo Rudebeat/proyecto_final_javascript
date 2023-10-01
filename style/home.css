@@ -1,10 +1,9 @@
 main {
   display: flex;
   justify-content: space-evenly;
-  height: 80vh;
-  padding: 0;
-  margin: 5% 0;
-  padding: 5%;
+  height: 70vh;
+  margin: 5% 0 0;
+  padding: 5% 0;
 }
 main .logo {
   height: 100%;
@@ -21,11 +20,10 @@ main .logo img {
 main .logo span {
   font-family: "Cormorant Infant", serif;
   font-size: 40px;
-  line-height: 50px;
   text-align: center;
   padding: 10px 0;
 }
-main .logo span br {
+main .logo br {
   display: none;
 }
 main .contentMain {
@@ -34,74 +32,41 @@ main .contentMain {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   text-align: left;
 }
 main .contentMain h1 {
   width: 80%;
 }
 main .contentMain p {
-  width: 80%;
+  width: 70%;
 }
 
-@media only screen and (min-width: 1025px) {
-  main .logo img {
-    width: 50%;
-  }
-  main .logo span {
-    font-size: 60px;
-  }
-}
-@media only screen and (max-width: 768px) {
-  main {
-    flex-direction: column;
-    justify-content: initial;
-  }
-  main .logo {
-    width: 100%;
-    flex-direction: initial;
-    justify-content: center;
-  }
-  main .logo img {
-    width: 30%;
-  }
-  main .logo span {
-    text-align: left;
-    padding-left: 2%;
-  }
-  main .logo span br {
-    display: initial;
-  }
-  main .contentMain {
-    padding: 5%;
-    width: 100%;
-    text-align: center;
-  }
-}
 section#terapias {
   height: auto;
   margin-bottom: 5%;
-}
-section#terapias .contentTerapias {
-  width: 70%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  margin: 0 auto;
-  text-align: center;
 }
 section#terapias .imagenTerapias {
   background-image: url(../svg/fondoTerapias.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  width: 90%;
-  height: 300px;
-  margin: 0 auto;
+  width: 100%;
+  height: 30vh;
 }
 section#terapias .imagenTerapias img {
-  width: 100%;
+  width: auto;
+  height: 100%;
+}
+section#terapias .contentTerapias {
+  text-align: center;
+  padding: 0 10%;
+}
+section#terapias button {
+  margin-top: 20px;
 }
 
 section#enfermedades {
@@ -110,13 +75,12 @@ section#enfermedades {
 }
 section#enfermedades h2 {
   text-align: center;
-  padding: 5%;
+  padding: 5% 5% 0;
 }
 section#enfermedades .contenedorSistemas {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  align-content: space-evenly;
   height: auto;
 }
 section#enfermedades .contenedorSistemas .sistema {
@@ -149,14 +113,14 @@ section#clientes {
 }
 section#clientes h2 {
   text-align: center;
-  display: block;
   padding: 5%;
 }
 
 .contenedorTestimonios {
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
+  flex-wrap: wrap;
+  height: auto;
 }
 .contenedorTestimonios .testimonio {
   background-color: #6DAB8E;
@@ -164,12 +128,178 @@ section#clientes h2 {
   padding: 5%;
   border-radius: 15px;
   box-shadow: 0 6px 16px 1px rgba(47, 64, 50, 0.4);
+  margin: 10px;
 }
-.contenedorTestimonios .testimonio div {
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
-}
-.contenedorTestimonios .testimonio div h4 {
+.contenedorTestimonios .testimonio h4 {
   margin-left: 10px;
+}
+
+@media only screen and (min-width: 1025px) {
+  main {
+    margin-top: 10%;
+  }
+  main .logo img {
+    width: 50%;
+  }
+  main .logo span {
+    font-size: 60px;
+  }
+  main .contentMain {
+    width: 40%;
+  }
+  section#terapias .imagenTerapias {
+    height: 40vh;
+  }
+  section#terapias .contentTerapias {
+    padding: 0 20%;
+  }
+}
+@media only screen and (min-width: 691px) and (max-width: 768px) {
+  main {
+    display: block;
+    height: auto;
+    padding: 5% 5% 0;
+    margin: 0;
+  }
+  main .logo {
+    width: 100%;
+    flex-direction: initial;
+    justify-content: center;
+  }
+  main .logo img {
+    width: 30%;
+  }
+  main .logo span {
+    text-align: left;
+    padding: 0 0 0 2%;
+    line-height: 40px;
+  }
+  main .logo span br {
+    display: initial;
+  }
+  main .contentMain {
+    padding: 5%;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+  section#enfermedades .contenedorSistemas .sistema {
+    width: 40%;
+  }
+  section#clientes .contenedorTestimonios .testimonio {
+    width: 40%;
+    margin: 20px;
+  }
+}
+@media only screen and (min-width: 427px) and (max-width: 690px) {
+  main {
+    display: block;
+    height: auto;
+    padding: 5% 5% 0;
+    margin: 10% 0;
+  }
+  main .logo {
+    width: 100%;
+    flex-direction: initial;
+    justify-content: center;
+    margin-bottom: 5%;
+  }
+  main .logo img {
+    width: 30%;
+  }
+  main .logo span {
+    text-align: left;
+    padding: 0 0 0 2%;
+    line-height: 40px;
+  }
+  main .logo span br {
+    display: initial;
+  }
+  main .contentMain {
+    padding: 5%;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+  section#terapias {
+    margin-bottom: 20%;
+  }
+  section#terapias .imagenTerapias {
+    background-image: url(../svg/fondoTerapias1.svg);
+  }
+  section#enfermedades .contenedorSistemas .sistema {
+    width: 40%;
+  }
+  section#enfermedades .contenedorSistemas .sistema div {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  section#enfermedades .contenedorSistemas .sistema div img {
+    margin: 0;
+  }
+  section#clientes .contenedorTestimonios .testimonio {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 426px) {
+  main {
+    display: block;
+    height: auto;
+    padding: 5% 5% 0;
+    margin: 20% 0;
+  }
+  main .logo {
+    width: 100%;
+    margin-bottom: 10%;
+  }
+  main .logo img {
+    width: 50%;
+  }
+  main .logo span {
+    text-align: center;
+    font-size: 35px;
+    line-height: 35px;
+  }
+  main .contentMain {
+    padding: 5%;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    margin: 10% 0;
+  }
+  main .contentMain h1 {
+    width: 100%;
+  }
+  main .contentMain p {
+    width: 100%;
+  }
+  section#terapias {
+    margin-bottom: 20%;
+  }
+  section#terapias .imagenTerapias {
+    background-image: url(../svg/fondoTerapias3.svg);
+  }
+  section#enfermedades {
+    margin-bottom: 20%;
+  }
+  section#enfermedades .contenedorSistemas .sistema {
+    width: 80%;
+    margin: 5% 0;
+  }
+  section#enfermedades .contenedorSistemas .sistema div {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  section#enfermedades .contenedorSistemas .sistema div img {
+    margin: 0;
+  }
+  section#clientes {
+    padding: 0;
+    margin-bottom: 20%;
+  }
+  section#clientes .contenedorTestimonios .testimonio {
+    width: 80%;
+  }
 }/*# sourceMappingURL=home.css.map */
