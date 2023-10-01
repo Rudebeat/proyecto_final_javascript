@@ -7,7 +7,9 @@ body {
 .fondo {
 	background-image: url(../img/bio_Clara_Tabares.jpg);
 	background-size: cover;
-	height: 100vh;
+	background-repeat: no-repeat;
+	background-position: top;
+	height: 80vh;
 	position: relative;
 
 	.namePage {
@@ -25,76 +27,43 @@ body {
 #bio {
 	height: auto;
 	padding: 5%;
-	text-align: left;
-	position: relative;
+	text-align: center;
 
 	p {
 		width: 60%;
+		margin: 25px auto 50px;
+		line-height: 30px;
 	}
-
-	// .boxFloat {
-	// 	display: none;
-	// 	position: absolute;
-	// 	right: 12%;
-	// 	top: -120%;
-
-	// 	img {
-	// 		display: none;
-	// 		height: 400px;
-	// 		width: 300px;
-	// 	}
-	// }
 }
-
-
-
-
 
 
 // MediaQueries
 
-@media only screen and (max-width:970px) {
-
-
-	.fondo {
-		height: 80vh;
-	}
+@media only screen and (min-width:1025px) {
 
 	#bio {
 		p {
-			width: auto;
-		}
-
-		.boxFloat {
-			display: none;
+			width: 70%; 
 		}
 	}
 }
 
-@media only screen and (min-width:971px) {
+@media only screen and (min-width:427px) and (max-width:768px) {
 	#bio {
 		p {
-			width: 55%;
-		}
-
-		.boxFloat {
-			right: 8%;
+			width: 80%;
 		}
 	}
-
-
 }
 
-@media only screen and (min-width:1024px) {
-	#bio {
-		p {
-			width: 60%;
-		}
-
-		.boxFloat {
-			right: 10%;
-		}
+@media only screen and (max-width:426px) {
+	.fondo{
+		height: 50vh;
 	}
 
-
+	#bio {
+		p {
+			width: 90%;
+		}
+	}
 }

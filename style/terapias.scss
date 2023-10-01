@@ -6,9 +6,10 @@ body {
 }
 
 .fondo {
-	background-image: url(../img/bio_Clara_Tabares.jpg);
+	background-image: url(../img/terapias.jpg);
 	background-size: cover;
-	height: 100vh;
+	height: 80vh;
+	background-position: right;
 	position: relative;
 
 	.namePage {
@@ -48,17 +49,17 @@ body {
 		border-radius: 10px;
 		display: flex;
 		align-items: center;
-	
+
 		img {
 			height: 100%;
 			width: 30%;
 			object-fit: cover;
 			border-radius: 10px 0 0 10px;
 		}
-	
+
 		.contenidoCardTerapias {
 			padding: 5%;
-		
+
 			h3 {
 				padding-bottom: 10px;
 			}
@@ -66,3 +67,63 @@ body {
 	}
 }
 
+// MediaQueries
+
+@media only screen and (min-width:1025px) {
+
+	.gridTerapias {
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(3, 1fr);
+		column-gap: 60px;
+	}
+
+	#bio {
+		p {
+			width: 70%;
+		}
+	}
+}
+
+@media only screen and (max-width:426px) {
+	.fondo {
+		height: 50vh;
+	}
+
+	.encabezadoGridTerapias {
+		padding: 15% 5%;
+
+		h2 {
+			padding: 0;
+		}
+	}
+
+	.gridTerapias {
+		width: 90%;
+		margin-bottom: 30%;
+
+		.itemTerapias {
+			flex-direction: column;
+			height: auto;
+			justify-content: center;
+
+			img {
+				width: 100%;
+				height: 70%;
+				border-radius: 10px 10px 0 0;
+				margin-bottom: 10px;
+			}
+
+			.contenidoCardTerapias {
+				padding: 5%;
+				box-shadow: none;
+				border-radius: 10px;
+				text-align: center;
+
+				h3 {
+					padding-bottom: 10px;
+				}
+			}
+		}
+	}
+
+}
