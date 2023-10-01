@@ -5,7 +5,8 @@ body {
 .fondo {
   background-image: url(../img/bio_Clara_Tabares.jpg);
   background-size: cover;
-  height: 100vh;
+  background-position: right;
+  height: 80vh;
   position: relative;
 }
 .fondo .namePage {
@@ -52,12 +53,11 @@ body {
   padding: 10px 25px 25px;
 }
 
-@media only screen and (max-width: 560px) {
+@media only screen and (max-width: 1024px) {
   .gridBlog {
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    row-gap: 30px;
-    padding: 5%;
+    -moz-column-gap: 15px;
+         column-gap: 15px;
+    padding: 0 5% 5%;
   }
 }
 @media only screen and (min-width: 561px) and (max-width: 767px) {
@@ -70,10 +70,17 @@ body {
     padding: 5%;
   }
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 560px) {
+  .fondo {
+    height: 60vh;
+  }
+  .encabezadoGridBlog {
+    padding: 5%;
+  }
   .gridBlog {
-    -moz-column-gap: 15px;
-         column-gap: 15px;
-    padding: 0 5% 5%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 30px;
+    padding: 5%;
   }
 }/*# sourceMappingURL=blog.css.map */
