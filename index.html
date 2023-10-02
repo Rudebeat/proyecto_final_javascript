@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="es">
 
 <head>
@@ -22,6 +23,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <!-- Fin íconos de BS -->
 
+    <!-- AOS animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Fin AOS animation -->
+
     <!-- Fuente Cormorant y Open sans inicio -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -42,7 +47,7 @@
     <!-- Header -->
 
     <header>
-        <section class="contenedorNav">
+        <section data-aos="zoom-in" data-aos-duration="500" data-aos-delay="500" class="contenedorNav">
 
             <nav class="navBS navbar navbar-expand-lg navbar-light bg-light">
 
@@ -101,7 +106,7 @@
         </div>
 
 
-        <div class="contentMain">
+        <div data-aos="fade-left" data-aos-duration="1000" class="contentMain">
             <h1>Medicina Alternativa & Farmacología Vegetal</h1>
             <p>Pierde peso, optimiza tu metabolismo y alivia dolores con nuestras terapias alternativas.</p>
         </div>
@@ -114,16 +119,17 @@
 
     <section id="terapias">
 
-            <div class="imagenTerapias"></div>
+        <div  class="imagenTerapias"></div>
 
-            <div class="contentTerapias">
-                <h2>¡Descubre nuevas formas de cuidarte!</h2>
-                <p>Sumérgete en el fascinante mundo del <span>Bienestar Holístico</span>, donde descubrirás terapias
-                    alternativas que complementan la medicina tradicional. Desde la acupuntura hasta la aromaterapia y
-                    muchos más. </p>
-            </div>
+        <div data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom" class="contentTerapias">
+            <h2>¡Descubre nuevas formas de cuidarte!</h2>
+            <p>Sumérgete en el fascinante mundo del <span>Bienestar Holístico</span>, donde descubrirás terapias
+                alternativas que complementan la medicina tradicional. Desde la acupuntura hasta la aromaterapia y
+                muchos más. </p>
+        </div>
 
-            <button type="button" class="btn btn-success btn-lg botones"><a href="pages/terapias.html">Ver terapías</a>
+        <button data-aos="zoom-in" type="button" class="btn btn-success btn-lg botones"><a href="pages/terapias.html">Ver terapías</a>
 
 
     </section>
@@ -137,7 +143,7 @@
 
         <div class="contenedorSistemas">
 
-            <div class="sistema">
+            <div data-aos="fade-up" data-aos-delay="200" class="sistema">
                 <div>
                     <img src="svg/iconosEnfermedades/iconoMetabolico.svg" alt="ícono del sistema metabólico">
                     <h3>Sistema Metabolismo</h3>
@@ -151,7 +157,7 @@
                 </ul>
             </div>
 
-            <div class="sistema">
+            <div data-aos="fade-up" data-aos-delay="400" class="sistema">
                 <div>
                     <img src="svg/iconosEnfermedades/iconoNervioso.svg" alt="ícono del sistema nervioso">
                     <h3>Sistema Nervioso</h3>
@@ -163,7 +169,7 @@
                     <li>Dolores crónicos</li>
                 </ul>
             </div>
-            <div class="sistema">
+            <div data-aos="fade-up" data-aos-delay="600" class="sistema">
                 <div>
                     <img src="svg/iconosEnfermedades/iconoDigestivo.svg" alt="ícono del sistema digestivo">
                     <h3>Sistema Digestivo</h3>
@@ -179,7 +185,7 @@
                 </ul>
             </div>
 
-            <div class="sistema">
+            <div data-aos="fade-up" data-aos-delay="200" class="sistema">
                 <div>
                     <img src="svg/iconosEnfermedades/iconoDolor.svg" alt="ícono del dolor">
                     <h3>Dolor</h3>
@@ -194,7 +200,7 @@
                 </ul>
             </div>
 
-            <div class="sistema">
+            <div data-aos="fade-up" data-aos-delay="400" class="sistema">
                 <div>
                     <img src="svg/iconosEnfermedades/iconoSexual.svg" alt="ícono de los géneros sexuales">
                     <h3>Sexual</h3>
@@ -208,7 +214,7 @@
                 </ul>
             </div>
 
-            <div class="sistema">
+            <div data-aos="fade-up" data-aos-delay="600" class="sistema">
                 <div>
                     <img src="svg/iconosEnfermedades/iconoMental.svg" alt="ícono de la salud mental">
                     <h3>Salud Mental</h3>
@@ -221,7 +227,7 @@
                 </ul>
             </div>
 
-            <div class="sistema">
+            <div data-aos="fade-up" data-aos-delay="200" class="sistema">
                 <div>
                     <img src="svg/iconosEnfermedades/iconoNeural.svg" alt="ícono de neurología">
                     <h3>Neurológico</h3>
@@ -233,7 +239,7 @@
                 </ul>
             </div>
 
-            <div class="sistema">
+            <div data-aos="fade-up" data-aos-delay="400" class="sistema">
                 <div>
                     <img src="svg/iconosEnfermedades/iconoRespiratorio.svg" alt="ícono del sistema respiratorio">
                     <h3>Sistema Respiratorio</h3>
@@ -246,7 +252,7 @@
                 </ul>
             </div>
 
-            <div class="sistema">
+            <div data-aos="fade-up" data-aos-delay="600" class="sistema">
                 <div>
                     <img src="svg/iconosEnfermedades/iconoPiel.svg" alt="ícono de la piel">
                     <h3>Piel</h3>
@@ -268,7 +274,7 @@
 
         <h2> Clientes felices</h2>
 
-        <div class="contenedorTestimonios">
+        <div data-aos="fade-up" data-aos-delay="200" class="contenedorTestimonios">
             <div class="testimonio">
 
                 <h4>Carlos Galindo</h4>
@@ -279,7 +285,7 @@
                     sequi et.</p>
             </div>
 
-            <div class="testimonio">
+            <div data-aos="fade-up" data-aos-delay="400" class="testimonio">
 
                 <h4>Carlos Galindo</h4>
 
@@ -289,7 +295,7 @@
                     sequi et.</p>
             </div>
 
-            <div class="testimonio">
+            <div data-aos="fade-up" data-aos-delay="600" class="testimonio">
 
                 <h4>Carlos Galindo</h4>
 
@@ -348,6 +354,14 @@
         integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
         crossorigin="anonymous"></script>
     <!-- BS 4.6 fin -->
+
+    <!-- AOS animanition -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- Fin AOS animanition -->
+
 </body>
 
 </html>

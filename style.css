@@ -57,13 +57,6 @@ header .contenedorNav .navBS {
   justify-content: space-between !important;
   height: 100%;
 }
-header .contenedorNav .navBS div.navbarColapsado button.navbar-toggler {
-  background-color: transparent !important;
-  border: none;
-}
-header .contenedorNav .navBS div.navbarColapsado button.navbar-toggler i {
-  color: white;
-}
 header .contenedorNav .navBS .logoMenu {
   height: 100%;
 }
@@ -76,20 +69,27 @@ header .contenedorNav .navBS .logoMenu img {
   height: 100%;
   width: 100%;
 }
-header .contenedorNav .navBS li {
+header .contenedorNav .navBS div.navbarColapsado button.navbar-toggler {
+  background-color: transparent !important;
+  border: none;
+}
+header .contenedorNav .navBS div.navbarColapsado button.navbar-toggler i {
+  color: white;
+}
+header .contenedorNav .navBS div.navbarColapsado li {
   margin: 0 10px;
 }
-header .contenedorNav .navBS li a {
+header .contenedorNav .navBS div.navbarColapsado li a {
   color: #6DAB8E !important;
 }
-header .contenedorNav .navBS li a:hover {
+header .contenedorNav .navBS div.navbarColapsado li a:hover {
   color: #57846C !important;
 }
-header .contenedorNav .navBS li .active {
+header .contenedorNav .navBS div.navbarColapsado li .active {
   font-weight: 800;
   color: #57846C !important;
 }
-header .contenedorNav .navBS .btnAgendarCitaMenu {
+header .contenedorNav .navBS div.navbarColapsado .btnAgendarCitaMenu {
   margin-left: 25px;
   padding: 10px 20px;
 }

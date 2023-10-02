@@ -16,6 +16,17 @@ main .logo {
 main .logo img {
   width: 50%;
   height: auto;
+  animation-name: rotacion;
+  animation-duration: 120s;
+  animation-timing-function: ease-out;
+}
+@keyframes rotacion {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
 }
 main .logo span {
   font-family: "Cormorant Infant", serif;

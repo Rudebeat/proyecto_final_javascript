@@ -6,7 +6,8 @@
 * {
 	padding: 0;
 	margin: 0;
-	box-sizing: border-box;;
+	box-sizing: border-box;
+	;
 }
 
 body {
@@ -40,7 +41,7 @@ a {
 	width: 200px !important;
 }
 
-span{
+span {
 	font-weight: 900;
 }
 
@@ -61,8 +62,6 @@ header {
 		box-shadow: 0 10px 16px -10px rgba(47, 64, 50, 0.3);
 		border-radius: 10px;
 
-
-
 		.navBS {
 			background-color: transparent !important;
 			display: flex !important;
@@ -70,16 +69,6 @@ header {
 			justify-content: space-between !important;
 			height: 100%;
 
-			div.navbarColapsado {
-				button.navbar-toggler {
-					background-color: transparent !important;
-					border: none;
-
-					i {
-						color: $blanco;
-					}
-				}
-			}
 
 			.logoMenu {
 				height: 100%;
@@ -96,40 +85,43 @@ header {
 				}
 			}
 
-			li {
-				margin: 0 10px;
+			div.navbarColapsado {
+				button.navbar-toggler {
+					background-color: transparent !important;
+					border: none;
 
-				a {
-					color: $color1 !important;
-
-					&:hover {
-						color: $color2 !important;
+					i {
+						color: $blanco;
 					}
 				}
 
-				.active {
-					font-weight: 800;
-					color: $color2 !important;
+				li {
+					margin: 0 10px;
+
+					a {
+						color: $color1 !important;
+
+						&:hover {
+							color: $color2 !important;
+						}
+					}
+
+					.active {
+						font-weight: 800;
+						color: $color2 !important;
+					}
 				}
+				
+				.btnAgendarCitaMenu {
+					margin-left: 25px;
+					padding: 10px 20px;
+				}
+				
 			}
-
-
-			.btnAgendarCitaMenu {
-				margin-left: 25px;
-				padding: 10px 20px;
-			}
-
 		}
-
-
-		
 
 	}
 }
-
-
-
-
 
 
 // Footer
