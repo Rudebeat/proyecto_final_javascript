@@ -1,0 +1,44 @@
+@import '../_recursosVisuales';
+
+.imagenArticulo {
+    height: 50vh;
+    width: 90%;
+    margin: 20vh auto 0;
+    overflow: hidden;
+    border-radius: 30px;
+    box-shadow: 0 6px 10px 1px rgba(0, 0, 0, 0.2);
+
+    img {
+        width: 100%;
+    }
+}
+
+.contentArticulo {
+    padding: 5% 0;
+    text-align: center;
+
+    h1 {
+        color: $color1;
+        margin: 0 auto 5vh;
+    }
+
+    .sinopsis {
+        width: 70%;
+        margin: 0 auto 10vh;
+    }
+
+    p {
+        width: 60%;
+        margin: 0 auto 10vh;
+    }
+}
+
+@media only screen and (max-width: 475px) {
+    .imagenArticulo {
+
+        img {
+            height: 100%;
+            width: auto;
+        }
+    }
+}

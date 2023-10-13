@@ -1,3 +1,7 @@
+h1 {
+  color: #57846C;
+}
+
 main {
   display: flex;
   justify-content: space-evenly;

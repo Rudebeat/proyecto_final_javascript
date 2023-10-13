@@ -39,17 +39,17 @@ body {
   box-shadow: 0 6px 16px 1px rgba(47, 64, 50, 0.4);
   border-radius: 10px;
 }
-.gridBlog .gridArticulo img {
+.gridBlog .gridArticulo a img {
   height: 100px;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 10px 10px 0 0;
 }
-.gridBlog .gridArticulo h3 {
+.gridBlog .gridArticulo a div h3 {
   padding: 25px 25px 10px;
 }
-.gridBlog .gridArticulo p {
+.gridBlog .gridArticulo a div p {
   padding: 10px 25px 25px;
 }
 

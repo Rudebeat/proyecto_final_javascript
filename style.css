@@ -2,12 +2,30 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
 }
 
 body {
   background-image: url(img/background.jpg);
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: bold;
+  color: #2F4032;
+}
+
+h2,
+h3,
+h4,
+h5 {
+  color: #2F4032;
 }
 
 button {
@@ -23,9 +41,11 @@ button a {
 
 a {
   text-decoration: none !important;
+  color: #2F4032;
 }
 a:hover {
   text-decoration: none !important;
+  color: #6DAB8E;
 }
 
 .botones {
@@ -81,6 +101,7 @@ header .contenedorNav .navBS div.navbarColapsado li {
 }
 header .contenedorNav .navBS div.navbarColapsado li a {
   color: #6DAB8E !important;
+  font-family: "Lexend Deca", sans-serif !important;
 }
 header .contenedorNav .navBS div.navbarColapsado li a:hover {
   color: #57846C !important;

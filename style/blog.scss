@@ -47,19 +47,26 @@ body {
 		box-shadow: 0 6px 16px 1px rgb(47, 64, 50, 0.4);
 		border-radius: 10px;
 
-		img {
-			height: 100px;
-			width: 100%;
-			object-fit: cover;
-			border-radius: 10px 10px 0 0;
-		}
+		a {
 
-		h3 {
-			padding: 25px 25px 10px;
-		}
+			img {
+				height: 100px;
+				width: 100%;
+				object-fit: cover;
+				border-radius: 10px 10px 0 0;
+			}
 
-		p {
-			padding: 10px 25px 25px;
+			div {
+
+				h3 {
+					padding: 25px 25px 10px;
+				}
+
+				p {
+					padding: 10px 25px 25px;
+				}
+			}
+
 		}
 	}
 }
