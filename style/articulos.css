@@ -17,6 +17,10 @@
 .contentArticulo h1 {
   color: #6DAB8E;
   margin: 0 auto 5vh;
+  padding: 0 5%;
+}
+.contentArticulo h2 {
+  padding: 5% 5% 1%;
 }
 .contentArticulo .sinopsis {
   width: 70%;
@@ -27,9 +31,29 @@
   margin: 0 auto 10vh;
 }
 
+@media only screen and (max-width: 990px) {
+  .imagenArticulo {
+    margin-top: 5vh;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .contentArticulo .sinopsis, .contentArticulo p {
+    width: 80%;
+  }
+}
 @media only screen and (max-width: 475px) {
   .imagenArticulo img {
-    height: 100%;
-    width: auto;
+    min-width: 180%;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+  }
+  .contentArticulo h1 {
+    padding: 0 20px;
+  }
+  .contentArticulo h2 {
+    padding: 5% 20px 1%;
+  }
+  .contentArticulo .sinopsis, .contentArticulo p {
+    width: 90%;
   }
 }/*# sourceMappingURL=articulos.css.map */

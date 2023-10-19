@@ -20,6 +20,11 @@
     h1 {
         color: $color1;
         margin: 0 auto 5vh;
+        padding: 0 5%;
+    }
+
+    h2 {
+        padding: 5% 5% 1%;
     }
 
     .sinopsis {
@@ -33,12 +38,45 @@
     }
 }
 
+@media only screen and (max-width: 990px) {
+    .imagenArticulo {
+        margin-top: 5vh;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .contentArticulo{
+
+        .sinopsis, p {
+            width: 80%;
+        }
+    }
+}
+
 @media only screen and (max-width: 475px) {
     .imagenArticulo {
 
         img {
-            height: 100%;
-            width: auto;
+            // height: auto;
+            // width: 100%;
+            min-width: 180%;
+            min-height: fit-content;
+
+        }
+    }
+
+    .contentArticulo{
+
+        h1 {
+            padding: 0 20px;
+        }
+    
+        h2 {
+            padding: 5% 20px 1%;
+        }
+
+        .sinopsis, p{
+            width: 90%;
         }
     }
 }

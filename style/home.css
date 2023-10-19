@@ -169,7 +169,7 @@ section#clientes h2 {
     padding: 0 20%;
   }
 }
-@media only screen and (min-width: 691px) and (max-width: 768px) {
+@media only screen and (min-width: 691px) and (max-width: 990px) {
   main {
     display: block;
     height: auto;

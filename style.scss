@@ -159,10 +159,16 @@ header {
 			color: $color1;
 		}
 
-		i {
-			color: $blanco;
-			font-size: x-large;
+		a {
+
+			margin-right: 15px;
+
+			i {
+				color: $blanco;
+				font-size: x-large;
+			}
 		}
+
 	}
 
 	.news {
@@ -173,6 +179,24 @@ header {
 
 		h4 {
 			color: $color1;
+		}
+
+		form{
+
+			div {
+
+				div{
+
+					button {
+	
+						&::placeholder {
+							color: $blanco;
+						}
+	
+					}
+				}
+			}
+
 		}
 
 	}

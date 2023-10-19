@@ -124,7 +124,10 @@ header .contenedorNav .navBS div.navbarColapsado .btnAgendarCitaMenu {
 .contenedorFooter .rrss h5 {
   color: #6DAB8E;
 }
-.contenedorFooter .rrss i {
+.contenedorFooter .rrss a {
+  margin-right: 15px;
+}
+.contenedorFooter .rrss a i {
   color: white;
   font-size: x-large;
 }
@@ -136,6 +139,12 @@ header .contenedorNav .navBS div.navbarColapsado .btnAgendarCitaMenu {
 }
 .contenedorFooter .news h4 {
   color: #6DAB8E;
+}
+.contenedorFooter .news form div div button::-moz-placeholder {
+  color: white;
+}
+.contenedorFooter .news form div div button::placeholder {
+  color: white;
 }
 
 @media only screen and (max-width: 991px) {
