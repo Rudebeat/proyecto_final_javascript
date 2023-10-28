@@ -46,6 +46,13 @@ body {
 	.gridArticulo {
 		box-shadow: 0 6px 16px 1px rgb(47, 64, 50, 0.4);
 		border-radius: 10px;
+		transition: all 0.2s;
+
+		&:hover {
+			filter: grayscale (1);
+			transform: scale(1.1);
+
+		}
 
 		a {
 

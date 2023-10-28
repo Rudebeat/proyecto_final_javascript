@@ -59,7 +59,7 @@ main .contentMain p {
 
 section#terapias {
   height: auto;
-  margin-bottom: 5%;
+  margin-bottom: 10%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -87,44 +87,69 @@ section#terapias button {
 section#enfermedades {
   height: auto;
   padding: 0;
+  display: flex;
 }
-section#enfermedades h2 {
-  text-align: center;
-  padding: 5% 5% 0;
+section#enfermedades .imagenEnfermedades {
+  width: 50%;
+  height: auto;
+  position: relative;
+}
+section#enfermedades .imagenEnfermedades img {
+  width: auto;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+}
+section#enfermedades .imagenEnfermedades .imagenEnfermedadesMobile {
+  display: none;
 }
 section#enfermedades .contenedorSistemas {
   display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
+  flex-direction: column;
   height: auto;
+  width: 50%;
+  padding: 5%;
+}
+section#enfermedades .contenedorSistemas h2 {
+  text-align: left;
+  width: 90%;
+  margin-bottom: 50px;
 }
 section#enfermedades .contenedorSistemas .sistema {
-  width: 30%;
-  padding: 30px;
-  margin: 2% 0;
-  border-radius: 30px;
-  box-shadow: 0 6px 10px 1px rgba(0, 0, 0, 0.2);
-}
-section#enfermedades .contenedorSistemas .sistema div {
+  width: 90%;
+  margin: 1% 0;
   display: flex;
   align-items: center;
 }
-section#enfermedades .contenedorSistemas .sistema div img {
+section#enfermedades .contenedorSistemas .sistema .imagenSistema {
+  padding: 3%;
+  background-color: rgba(109, 171, 142, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-right: 3%;
+}
+section#enfermedades .contenedorSistemas .sistema .imagenSistema img {
   height: 50px;
-  width: auto;
-  margin-right: 15px;
+  width: 40px;
+  height: 40px;
 }
 section#enfermedades .contenedorSistemas .sistema div h3 {
   color: #57846C;
+  margin: 0;
 }
-section#enfermedades .contenedorSistemas .sistema ul {
-  padding: 5% 10%;
+section#enfermedades .contenedorSistemas .sistema div span {
+  color: #6DAB8E;
+}
+section#enfermedades .contenedorSistemas .sistema div p {
+  margin: 0;
 }
 
 section#clientes {
   height: auto;
-  padding: 50px;
-  margin-bottom: 10%;
+  padding: 50px 50px 150px;
+  background-color: rgba(181, 217, 187, 0.09);
 }
 section#clientes h2 {
   text-align: center;
@@ -198,12 +223,81 @@ section#clientes h2 {
     text-align: center;
     align-items: center;
   }
-  section#enfermedades .contenedorSistemas .sistema {
-    width: 40%;
-  }
   section#clientes .contenedorTestimonios .testimonio {
     width: 40%;
     margin: 20px;
+  }
+}
+@media only screen and (max-width: 1180px) {
+  section#enfermedades {
+    flex-direction: column;
+  }
+  section#enfermedades .imagenEnfermedades {
+    width: auto;
+    height: 500px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  section#enfermedades .imagenEnfermedades img {
+    display: none;
+  }
+  section#enfermedades .imagenEnfermedades .imagenEnfermedadesMobile {
+    width: auto;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    display: initial;
+  }
+  section#enfermedades .contenedorSistemas {
+    width: 100%;
+    padding: 5%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: rgba(181, 217, 187, 0.09);
+  }
+  section#enfermedades .contenedorSistemas h2 {
+    text-align: center;
+    width: 100%;
+  }
+  section#enfermedades .contenedorSistemas .sistema {
+    width: 30%;
+    padding: 3%;
+    flex-direction: column;
+    justify-content: center;
+  }
+  section#enfermedades .contenedorSistemas .sistema .imagenSistema {
+    margin: 0;
+  }
+  section#enfermedades .contenedorSistemas .sistema .imagenSistema img {
+    height: 50px;
+    width: 40px;
+    height: 40px;
+  }
+  section#enfermedades .contenedorSistemas .sistema div {
+    text-align: center;
+  }
+  section#clientes {
+    background-color: white;
+  }
+}
+@media only screen and (max-width: 768px) {
+  section#enfermedades .imagenEnfermedades {
+    height: 400px;
+    overflow: hidden;
+  }
+}
+@media only screen and (max-width: 511px) {
+  section#enfermedades .imagenEnfermedades {
+    height: 300px;
+    overflow: hidden;
+  }
+}
+@media only screen and (max-width: 392px) {
+  section#enfermedades .imagenEnfermedades {
+    height: 250px;
+    overflow: hidden;
   }
 }
 @media only screen and (min-width: 427px) and (max-width: 690px) {

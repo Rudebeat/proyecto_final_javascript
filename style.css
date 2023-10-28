@@ -140,10 +140,7 @@ header .contenedorNav .navBS div.navbarColapsado .btnAgendarCitaMenu {
 .contenedorFooter .news h4 {
   color: #6DAB8E;
 }
-.contenedorFooter .news form div div button::-moz-placeholder {
-  color: white;
-}
-.contenedorFooter .news form div div button::placeholder {
+.contenedorFooter .news form div button {
   color: white;
 }
 
