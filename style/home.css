@@ -396,14 +396,6 @@ section#clientes h2 {
     width: 80%;
     margin: 5% 0;
   }
-  section#enfermedades .contenedorSistemas .sistema div {
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-  }
-  section#enfermedades .contenedorSistemas .sistema div img {
-    margin: 0;
-  }
   section#clientes {
     padding: 0;
     margin-bottom: 20%;
