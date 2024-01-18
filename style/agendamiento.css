@@ -1,0 +1,73 @@
+.modalCarrito {
+  position: fixed;
+  right: 5vh;
+  width: 30%;
+  background-color: white;
+  border-radius: 15px;
+  z-index: 5;
+  padding: 5%;
+  top: 15VH;
+  box-shadow: 5px 5px 13px rgba(0, 0, 0, 0.3);
+  display: none;
+}
+.modalCarrito.showModal {
+  display: initial;
+}
+.modalCarrito .cardAgendamiento {
+  margin-bottom: 15%;
+}
+.modalCarrito .cardAgendamiento h4 {
+  color: #6DAB8E;
+  width: 100%;
+}
+
+.btnAgendarCitaMenu {
+  position: relative;
+}
+.btnAgendarCitaMenu .bullet {
+  position: absolute;
+  top: -10px;
+  background: aqua;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: -10px;
+  color: black;
+}
+
+main {
+  padding-top: 12%;
+  text-align: center;
+}
+main .contenedorAgendamiento {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 5%;
+}
+main .contenedorAgendamiento .cardAgendamiento {
+  width: 20%;
+  height: auto;
+  background-color: white;
+  box-shadow: 0 6px 16px 1px rgba(102, 192, 119, 0.4);
+  border-radius: 15px;
+  padding: 2%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+main .contenedorAgendamiento .cardAgendamiento h4 {
+  color: #6DAB8E;
+  width: 100%;
+}
+main .contenedorAgendamiento .cardAgendamiento .btnServiciosCarrito {
+  padding: 3% 0;
+  width: 80%;
+  height: 40px;
+}
+main h1 {
+  margin: 0 auto;
+}/*# sourceMappingURL=agendamiento.css.map */

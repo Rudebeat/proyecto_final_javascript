@@ -1,0 +1,92 @@
+@import '../_recursosVisuales';
+
+.modalCarrito {
+    position: fixed;
+    right: 5vh;
+    width: 30%;
+    background-color: $blanco;
+    border-radius: 15px;
+    z-index: 5;
+    padding: 5%;
+    top: 15VH;
+    box-shadow: 5px 5px 13px rgb(0 0 0 / 30%);
+
+    display: none;
+    &.showModal{
+        display: initial
+    }
+
+    .cardAgendamiento {
+        margin-bottom: 15%;
+
+        h4 {
+            color: $color1;
+            width: 100%;
+        }
+    }
+
+}
+
+.btnAgendarCitaMenu{
+    position: relative;
+
+    .bullet{
+        position: absolute;
+        top: -10px;
+        background: aqua;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        right: -10px;
+        color: black;
+    }
+}
+
+
+
+main {
+
+    padding-top: 12%;
+    text-align: center;
+
+    .contenedorAgendamiento {
+
+        display: flex;
+        justify-content: space-evenly;
+        padding-top: 5%;
+
+        .cardAgendamiento {
+            width: 20%;
+            height: auto;
+            background-color: $blanco;
+            box-shadow: 0 6px 16px 1px rgba(102, 192, 119, 0.4);
+            border-radius: 15px;
+            padding: 2%;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            text-align: center;
+
+            h4 {
+                color: $color1;
+                width: 100%;
+            }
+
+            .btnServiciosCarrito {
+
+                padding: 3% 0;
+                width: 80%;
+                height: 40px;
+
+            }
+        }
+
+    }
+
+    h1 {
+        margin: 0 auto;
+    }
+}
