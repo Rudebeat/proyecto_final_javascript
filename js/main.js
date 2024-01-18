@@ -1,3 +1,5 @@
+// Array de servicios a ofrecer
+
 const cards = [
 
     {
@@ -27,14 +29,22 @@ const cards = [
 
 ];
 
+// Obtener div contenedor en el DOM
+
 const contenedor = document.getElementById("contenedorCards");
+
+// Se trae el carrito del localStorage
+
 const carrito = JSON.parse(localStorage.getItem("carrito")) ?? [];
 
+// creación de los cards de los servicios del carrito
 const cargaDeCards = () => {
     contenedor.innerHTML = ""
 
     cards.forEach(card => {
         let botonAgregar = "";
+
+        // Validar si esta agegado o no en el carrito
 
         if (!carrito.some(item => item === card.id)) {
             botonAgregar = `
@@ -56,6 +66,8 @@ const cargaDeCards = () => {
         </div>
         `;
 
+        // Cargar el card en el DOM
+
         contenedor.innerHTML += cardHtml;
 
     });
@@ -66,7 +78,11 @@ cargaDeCards();
 
 const agregarCarrito = idCard => {
 
+    // Se agrega ID del card en el carrito
+
     carrito.push(idCard);
+
+    // Se agrega carrito en el localStorage
 
     localStorage.setItem("carrito", JSON.stringify(carrito))
 
@@ -75,12 +91,18 @@ const agregarCarrito = idCard => {
     totalCarrito();
 };
 
+// Función para borrar servicio del carrito
 
 const borrarCarrito = idCard => {
 
+    // Se busca posición del servicio en el Array
+
     const index = carrito.findIndex(item => item === idCard);
 
+    // Se borra el servicio del Array
     carrito.splice(index, 1);
+
+    // Se actualiza el localStorage
 
     localStorage.setItem("carrito", JSON.stringify(carrito));
 
@@ -94,8 +116,13 @@ const borrarCarrito = idCard => {
 const modalCarrito = document.getElementById("modalCarrito");
 const contenedorCarrito = document.getElementById("contenedorCarrito");
 
+// Función para actualizar carrito
+
 const cargaDeCarrito = () => {
     contenedorCarrito.innerHTML = ""
+
+    // Buscar servicios que estan en el carrito
+
     const cardsCarrito = cards.filter(card => carrito.includes(card.id));
 
     cardsCarrito.forEach(card => {
@@ -119,17 +146,29 @@ const cargaDeCarrito = () => {
 
 cargaDeCarrito();
 
+// Función para mostrar y ocultar carrito
+
 const mostrarCarrito = evento => {
     if (evento) {
         modalCarrito.classList.add("showModal");
-    } else{
+    } else {
         modalCarrito.classList.remove("showModal");
     }
 }
 
+// función para hallar el total del carrito
+
 const totalCarrito = () => {
+
+    // Buscar servicios que estan en el carrito
+
     const cardsCarrito = cards.filter(card => carrito.includes(card.id));
-    const total = cardsCarrito.reduce((acum,card) => acum + card.precio, 0);
+
+    // Sumar precios de los servicios en el carrito
+
+    const total = cardsCarrito.reduce((acum, card) => acum + card.precio, 0);
+
+    // Mostrar el total en el DOM
 
     const precioHtml = document.getElementById("totalCarrito");
     precioHtml.innerText = `${total}`;
