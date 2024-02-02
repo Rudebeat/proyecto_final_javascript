@@ -72,9 +72,6 @@
             </div>
         </div>
 
-        <button onclick="mostrarCarrito(false)" type="button" class="btn btn-success btn-sm btnAgendarCitaMenu"><a>
-                Cerrar</a>
-
     </div>
 
     <a href="https://wa.link/etxpq7" target="_blank">
@@ -120,10 +117,10 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="blog.html">Blog</a>
                             </li>
-                            <button onclick="mostrarCarrito(true)" type="button"
+                            <button onclick="mostrarCarrito()" type="button"
                                 class="btn btn-success btn-sm btnAgendarCitaMenu"><a>
                                     Carrito
-                                <span id="bulletHtml" class="bullet">0</span>
+                                    <span id="bulletHtml" class="bullet">0</span>
                                 </a>
                         </ul>
                     </div>
@@ -144,19 +141,6 @@
         <h1>¿Qué servicios quieres adquirir?</h1>
 
         <div id="contenedorCards" class="contenedorAgendamiento">
-
-            <!-- <div class="cardAgendamiento">
-
-                <h3>Valoración inicial</h3>
-                <h4>$200.000</h4>
-                <p>Inicia tu tratamiento con la Dra. Clara Tabares realizando una valoración general y específica</p>
-
-                <button type="button" class="btn btn-success btn-sm btnServiciosCarrito"><a
-                    href="https://claratabares.site.agendapro.com/co/sucursal/106410"
-                    target="_blank">Agregar al carrito</a>
-
-            </div> -->
-
         </div>
 
     </main>
@@ -179,6 +163,10 @@
         AOS.init();
     </script>
     <!-- Fin AOS animanition -->
+
+    <!-- Sweet alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Sweet alert fin -->
 
     <!-- Main JS inicia -->
     <script src="../js/main.js"></script>

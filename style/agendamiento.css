@@ -1,24 +1,41 @@
 .modalCarrito {
   position: fixed;
   right: 5vh;
-  width: 30%;
+  width: 20%;
   background-color: white;
   border-radius: 15px;
   z-index: 5;
-  padding: 5%;
+  padding: 20px;
   top: 15VH;
   box-shadow: 5px 5px 13px rgba(0, 0, 0, 0.3);
+  max-height: 60vh;
+  overflow-y: scroll;
   display: none;
 }
 .modalCarrito.showModal {
   display: initial;
 }
 .modalCarrito .cardAgendamiento {
-  margin-bottom: 15%;
+  align-items: center;
+  border-bottom: solid 1px gray;
+  padding-bottom: 15px;
+  max-width: 60%;
+  margin: auto;
+  margin-bottom: 15px;
+  text-align: center;
 }
 .modalCarrito .cardAgendamiento h4 {
   color: #6DAB8E;
   width: 100%;
+  font-size: 14px;
+  width: 100%;
+}
+.modalCarrito .cardAgendamiento h3 {
+  font-size: 15px;
+}
+.modalCarrito .row {
+  margin-top: 50px;
+  align-items: center;
 }
 
 .btnAgendarCitaMenu {

@@ -1,15 +1,18 @@
 @import '../_recursosVisuales';
 
+
 .modalCarrito {
     position: fixed;
     right: 5vh;
-    width: 30%;
+    width: 20%;
     background-color: $blanco;
     border-radius: 15px;
     z-index: 5;
-    padding: 5%;
+    padding: 20px;
     top: 15VH;
     box-shadow: 5px 5px 13px rgb(0 0 0 / 30%);
+    max-height: 60vh;
+    overflow-y: scroll;
 
     display: none;
     &.showModal{
@@ -17,14 +20,30 @@
     }
 
     .cardAgendamiento {
-        margin-bottom: 15%;
+        align-items: center;
+        border-bottom: solid 1px gray;
+        padding-bottom: 15px;
+        max-width: 60%;
+        margin: auto;
+        margin-bottom: 15px;
+        text-align: center;
 
         h4 {
             color: $color1;
             width: 100%;
+            font-size: 14px;
+            width: 100%;
+        }
+
+        h3 {
+            font-size: 15px;
         }
     }
 
+    .row {
+        margin-top: 50px;
+        align-items: center;
+    }
 }
 
 .btnAgendarCitaMenu{

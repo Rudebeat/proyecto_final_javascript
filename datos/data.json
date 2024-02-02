@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "titulo": "Valoración inicial",
+        "precio": 200000,
+        "descripcion": "Inicia tu tratamiento con la Dra. Clara Tabares realizando una valoración general y específica"
+    },
+    {
+        "id": 2,
+        "titulo": "Sueroterapia",
+        "precio": 250000,
+        "descripcion": "Inicia tu tratamiento con la Dra. Clara Tabares realizando una valoración general y específica"
+    },
+    {
+        "id": 3,
+        "titulo": "Teleconsulta",
+        "precio": 200000,
+        "descripcion": "Inicia tu tratamiento con la Dra. Clara Tabares realizando una valoración general y específica"
+    },
+    {
+        "id": 4,
+        "titulo": "Plasma",
+        "precio": 500000,
+        "descripcion": "Inicia tu tratamiento con la Dra. Clara Tabares realizando una valoración general y específica"
+    }
+
+]
